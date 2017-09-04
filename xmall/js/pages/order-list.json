@@ -1,0 +1,21 @@
+{
+  "type": "order-list",
+  "template": "order-list.html",
+  "components": [
+    {
+      "type": "AllOrderListView",
+      "id": "AllOrderListView",
+      "collection":"AllOrderListCollection",
+      "template":"all-order-list-item.html",
+      "paging":true,
+      "autoload":false
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "template":"myBalanceDetail.html",
+  "type": "myBalanceDetail",
+  "components": [
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "type": "ListView",
+      "id":"mybalancedetail",
+      "collection": "BalanceDetailCollection",
+      "template": "balancedetaillistview.html"
+    }
+  ]
+}

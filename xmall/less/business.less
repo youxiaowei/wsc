@@ -1,0 +1,230 @@
+@import "common";
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{height:1%;}
+.logo-wrap{
+  background-image: url('../images/business/pic_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  .px2rem(height,235);
+  width: 100%;
+  position: relative;
+  background-size: cover;
+
+  .logo{
+    .px2rem(height,102);
+    .px2rem(width,102);
+  }
+  .business-cover{
+
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    .px2rem(height,235);
+    width: 100%;
+  }
+}
+.business-tab{
+  background: white;
+  display: table;
+  width: 100%;
+ .px2rem(height,123);
+  text-align: center;
+
+  li{
+    .px2rem(padding-top,20);
+    display: table-cell;
+    vertical-align: middle;
+
+    span::before{
+      .px2rem(font-size,60);
+      line-height: 0;
+
+    }
+    p{
+      margin-bottom: 1px;
+      line-height: 1;
+      .px2rem(font-size,24);
+    }
+
+  }
+}
+
+.business-bottom{
+
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  display: table;
+  text-align: center;
+  .px2rem(height,88);
+  bottom: 0px;
+  border-top: 1px solid #a0a0a0;
+  div{
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    color: #666666;
+    .px2rem(font-size,28);
+  }
+  .vertical-div{
+    display: inline-block;
+    box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 1px;
+    height: 100%;
+  }
+  .horizontal-div{
+    box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); height: 1px;
+    width: 100%;
+  }
+  a{
+    color: #666666;
+  }
+}
+.business-contentwrap{
+  .px2rem(padding-top,90);
+
+  .business-shop{
+    line-height: 2;
+
+  width: 7.28rem;
+    p:nth-child(1){
+      &::before{
+        content: " ";
+        color: transparent;
+        border-right: 1px solid #ddd;
+        left: 6rem;
+        position: relative;
+      }
+      color: #FFFFFF;
+      .px2rem(font-size,28);
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+
+  }
+
+
+
+}
+
+.business-brandinfo{
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+  .vertical-div{
+
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 1px;
+    height: 100%;
+
+  }
+  div{
+
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .business-collect{
+    vertical-align: middle;
+    width:1rem;
+    p{
+      color: white;
+      .px2rem(font-size,18);
+
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    p:nth-child(1){
+      margin-bottom: 0px;
+      span:before{
+
+        .px2rem(font-size,40);
+      }
+
+    }
+  }
+}
+.business-product{
+  width: 100%;
+  padding-left:0.2rem;
+  padding-right:0.2rem;
+  position: absolute;
+  .px2rem(padding-bottom,84);
+  background: #F5F5F5;
+  .px2rem(padding-top, 10);
+  #allproducts,#newproducts{
+    .bussiness-horizontal-view{
+      li{
+
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+        a{
+          >div{
+            display: table-cell;
+            vertical-align: middle;
+            .px2rem(height,295.328);
+
+            img{
+                width: 2.6666667rem;
+                height: 2.6666667rem;
+              position: absolute;
+              .px2rem(top,45);
+            }
+            .home-goods-words{
+              padding-left: 2.9rem;
+              .home-goods-character{
+                .px2rem(height,76);
+              }
+              .home-goods-money{
+                height: auto;
+                margin-top: 0.8rem;
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+.business-title{
+  font-size: 0.37333333rem; text-align: left !important;
+}
+.business-goods-wrap{
+  .business-select{
+    span,span::before{
+      color: #f55047 !important;
+    }
+  }
+  li{
+    .px2rem(padding-left,20);
+    .px2rem(padding-right,20);
+    .px2rem(height,90);
+    .px2rem(line-height,90);
+    border-bottom: 1px solid #e6e6e6;
+
+    span{
+      color: #666666;
+      .px2rem(font-size,30);
+    }
+  }
+  li::before{
+    position: absolute;
+
+    .px2rem(right,20);
+    .px2rem( font-size,32);
+    .px2rem(height,34);
+    /* left: 20px; */
+    color: #b1b1b1;
+  }
+}
+body{
+  background: whitesmoke;
+}
+#business-main{
+  background: whitesmoke;
+}

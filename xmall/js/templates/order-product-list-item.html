@@ -1,0 +1,29 @@
+<div class="shop-info">
+  <div class="shop-goodslist">
+    <ul class="shop-goodslist-ul">
+      <% for(var i = 0; i<items.length;i++){ %>
+        <li>
+          <div class="goods-details-listitem">
+            <div class="goods-details-img">
+              <img src="<%=items[i].goodsImage%>" alt="" />
+            </div>
+            <div class="goods-details-title">
+              <%=items[i].goodName%>
+            </div>
+            <div class="goods-details-description">
+              <%=items[i].goodsSpec%>
+            </div>
+            <div class="goods-details-price">
+              <div class="goods-details-unit-price">
+                  ¥<%=items[i].goodsPrice%>
+              </div>
+              <div class="goods-details-number">
+                x<%=items[i].number%>
+              </div>
+            </div>
+          </div>
+        </li>
+      <% }%>
+    </ul>
+  </div>
+</div>

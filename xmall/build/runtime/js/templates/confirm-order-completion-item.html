@@ -1,0 +1,40 @@
+<ul class="table-view"
+	style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); margin-bottom: 5px; background-color: rgb(255, 255, 255);">
+	<li class="table-view-cell media favorite-item list-content"
+		style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221);">
+		<div class='item-package-detail-id' hidden="true"><%=productId%></div>
+		<div class="list-item">
+			<img class="item-package-detail-img"
+				src="<%=productImage%>">
+			<div class="media-body item-media-body">
+				<div class="item-package-detail-title">
+					<div class="item-package-detail-name"><%=productName%></div>
+					<div class="item-net-content"><%=specInfo%></div>
+				</div>
+				<div class="item-package-detail-price">
+					<div class="price-money">￥<%=productPrice%></div>
+					<div class="right-text">x<%=number%></div>
+				</div>
+			</div>
+		</div>
+		
+		 <div class="customer-service" hidden="true">
+		   <div hidden="true"><%=ogid%></div>
+		   <% if(suitType != 1) {%>
+			   <%if(isSupport==0){%>
+	              <a class="customer-service-button customer-service-sale">售后中</a>
+	           <% }else{ %>
+	              <a class="customer-service-button customer-service-sale">申请售后</a>
+	           <% } %>
+           <%}%>
+           <%if(isComment == 1){%>
+	            <a class="customer-service-button customer-comment">去评价</a>
+	            <div hidden="true"><%=ogid%></div>
+            <%}else{%>
+                <a class="customer-service-button customer-comment">去评价</a>
+	            <div hidden="true"><%=ogid%></div>
+	        <%}%>    
+         </div>
+         
+	</li>
+</ul>

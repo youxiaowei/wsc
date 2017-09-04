@@ -1,0 +1,46 @@
+<div class="shopingcart-item">
+  <div class="shopingcart-item-goods">
+      <div class="shopingcart-goods-listitem" data-index="<%=cartId%>" data-pid="<%=productId%>">
+ 
+        <span class="icomoon icomoon-choicebox shopingcart-choicebox-goods" ></span>
+        <div class="shopingcart-goods-details-img">
+          <img src="<%=image%>" alt="" />
+        </div>
+ 
+        <div class="shopingcart-goods-details-spec">
+            <!-- <%=mark%> -->
+        </div>
+ 
+        <div class="shopingcart-goods-details-info-show">
+          <div class="shopingcart-goods-details-title" style="color:#666">
+            <%=name%>
+          </div>
+ 
+          <div class="shopingcart-goods-details-price">
+            <div class="shopingcart-goods-details-unit-price" data-price="<%=price%>">
+                ¥<%=price%>
+            </div>
+            <div class="shopingcart-goods-details-number">
+               x<%=number%>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="shopingcart-goods-edit">
+          <div class="shopingcart-goods-edit-number">
+            <button  data-cid="<%=cartId%>" type="button" class="shopingcart-goods-edit-btn-minus" data-minimum="1">-</button>
+            <input value="<%=number%>"  data-cid="<%=cartId%>"  class="shopingcart-goods-edit-input" type="number" pattern="[0-9]*"  onKeyUp="value=value.replace(/\D/g,'')" onafterpaste="value=value.replace(/\D/g,'')">
+            <button  data-cid="<%=cartId%>" type="button" class="shopingcart-goods-edit-btn-plus">+</button>
+          </div>
+          <div class="shopingcart-goods-edit-spec">
+            <span class="icomoon icomoon-spread"></span>
+          </div>
+ 
+          <div class="shopingcart-goods-delete theme-backgorund-color">
+            删除
+          </div>
+        </div>
+ 
+      </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<%if(orderStatus == '3'){ %>
+	<div class="delivered-state-title">
+	         <div class="left-title">待发货</div>
+	         <div hidden="true"><%=billsId%></div>
+	         <div class="right-title order-cancel-bill">
+    	<%if(isCancel == 0){%>
+	             <span>取消发货</span>
+		<%}else if(isCancel == 1){%>
+	     		<span>售后申请中</span>
+		<%}%>
+	         </div>
+	         <div hidden="true"><%=isCancel%></div>
+	</div>
+	 
+<% }else if(orderStatus == "4"){%>
+    <div class="delivered-state-title">
+			<div class="left-title">已发货</div>
+			<div hidden="true"><%=billsId%></div>
+			<div class="right-title order-wait-bill">
+				<span>确认收货</span>			
+			</div>
+		</div>
+<%}else if(orderStatus == "5"){ %> 
+     <div class="delivered-state-title">
+			<div class="left-title">完成</div>
+	 </div>
+<%}%>
+<ul class="table-view">
+  <% for(var i=0;i< orderGoodsList.length;i++){ %>
+	<li class="all-order-list-item" data-index="">
+	   <div class="bill-ladtitle" style="font-size: 0.41rem;">提货时间：<%=ctime%></div>
+		<div class="list-item-line"></div>
+		<div class="order-goods-details-listitem">
+			<div class="goods-details-img">
+				<img
+					src="<%=orderGoodsList[i].goodsImage%>" alt="" />
+			</div>
+			<div class="order-goods-details-content">
+				<div class="delivered-protuct-title">
+					<div class="delivered-protuct-name"><%=orderGoodsList[i].goodsName%></div>
+					<div class="delivered-protuct-number">X<%=orderGoodsList[i].goodsNumber%></div>
+				</div>
+				<%if(orderStatus == "5"){%>
+				   <%if(orderGoodsList[i].isSupport==1){%>
+						<div hidden="true"><%=billsId%></div>
+						<div class="delivered-protuct-button">
+							<span style="color:#ccc">换货</span>
+						</div>
+						<div hidden="true"><%=orderGoodsList[i].ogid%></div>
+					<%}else {%>	
+					     <div hidden="true"><%=billsId%></div>
+					     <div class="delivered-protuct-button">
+							<span style="color:#ccc">售后处理中</span>
+						</div>
+						<div hidden="true"><%=orderGoodsList[i].ogid%></div>
+					<%}%>
+				<% } %>
+			</div>
+		</div>
+	</li>
+	<% } %>
+</ul>

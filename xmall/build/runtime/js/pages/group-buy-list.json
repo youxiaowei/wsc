@@ -1,0 +1,21 @@
+{
+  "type":"group-buy-list",
+  "template":"group-buy-list.html",
+  "components":[
+    {
+      "id":"GroupBuyListView",
+      "type":"GroupBuyListView",
+      "template":"group-buy-list-item.html",
+      "collection":"GroupBuyListCollection",
+      "paging": true,
+      "autoload": false
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

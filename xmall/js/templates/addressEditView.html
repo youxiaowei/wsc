@@ -1,0 +1,100 @@
+<div class="address-edit-info">
+  <header class="headerbox">
+      <div class="left-right nav-left goback">
+          <span class="icomoon icomoon-back"></span>
+      </div>
+      <div class='mid'>
+        <span class="common-title">收货地址</span>
+      </div>
+      <div class="left-right nav-right">
+
+      </div>
+
+  </header>
+
+  <div class="address-name-content">
+
+
+    <div class="input-background">
+      <div class="input-addressdiv">
+        <div class='input-label-wrapper'> <label class="input-label-name">收货人</label></div>
+        <div class='input-value-wrapper'>
+        <input class="input-value aName" type="text" value="<%=receiver%>" /></div>
+      </div>
+    </div>
+    <div class="input-background">
+      <div class="input-addressdiv">
+        <div class='input-label-wrapper'>
+        <label class="input-label-name">手机号码</label></div>
+        <div class='input-value-wrapper'>  <input class="input-value aLink" type="text" value="<%=receiverPhone%>" />
+      </div>
+     </div>
+    </div>
+
+    <div>
+      <div class="input-background zone-check" id="selectP">
+        <div class="input-addressdiv">
+          <div class='input-label-wrapper'>
+          <label class="input-label-name">所在省份</label>
+        </div>
+        <div class='input-value-wrapper' >
+           <input class="input-value valueP" readOnly="true" type="text" placeholder="请选择"/>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="input-background zone-check" id="selectCity">
+
+        <div class="input-addressdiv">
+          <div class='input-label-wrapper'>
+              <label class="input-label-name">所在城市</label>
+          </div>
+          <div class='input-value-wrapper' >
+            <input class="input-value valueCity" readOnly="true" type="text"placeholder="请选择"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-background zone-check" id="selectArea">
+        <div class="input-addressdiv">
+            <div class='input-label-wrapper'>
+          <label class="input-label-name">所在区县</label></div>
+
+                <div class='input-value-wrapper' >
+          <input class="input-value valueArea" readOnly="true" type="text"placeholder="请选择"/>
+        </div>
+       </div>
+      </div>
+
+    </div>
+
+    <div class="input-background">
+      <div class="input-addressdiv" id="input-addressdiv">
+        <div class='input-label-wrapper'><label class="input-label-name">详细地址</label></div>
+        <div class='input-value-wrapper'>
+          <input class="input-value aDetail" value="<%=receiverAddr%>" type="text"/>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+
+
+  <div class="address-editBtn-div">
+    <button class="address-editBtn theme-backgorund-color theme-border-color">保存</button>
+  </div>
+  <div id="city" hidden= "true">
+   <select disabled="disabled" name="address.idP" class="province input-value-select aAddress" data-value="<%=receiverProvince%>">
+                <option value="-1">请选择</option>
+              <select/>
+              <select disabled="disabled" name="address.idCity" class="city input-value-select aAddress" data-value="<%=receiverCity%>">
+            <option value="-1">请选择</option>
+            <select/>
+              <select  disabled="disabled" name="address.idArea" class="area input-value-select aAddress" data-value="<%=receiverRegion%>">
+            <option value="-1">请选择</option>
+            <select/>
+</div>
+
+</div>

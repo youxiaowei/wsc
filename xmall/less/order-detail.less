@@ -1,0 +1,157 @@
+@import "common";
+.order-detail {
+  width: 100%;
+  position: absolute;
+  top: 1.17333333rem;
+  .px2rem(bottom,100);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: @base-page-color;
+  font-size: 0.41rem;
+  #order_detail_header_bk {
+    z-index: 0;
+  }
+  .order-status {
+    position: relative;
+    width: 100%;
+    .px2rem(height,368);
+    .order-status-text {
+      color: #fff;
+      .px2rem(font-size,30);
+      position: absolute;
+      .px2rem(left,86);
+      .px2rem(bottom,118);
+    }
+  }
+  .order-detail-info {
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+    background-color: #fff;
+    padding: 0.2rem;
+    color: #b1b1b1;
+    font-size: 0.35rem;
+    line-height: 0.35rem;
+    border-bottom: 1px solid #ccc;
+    .order-info-info {
+      margin: 0.1rem;
+    }
+  }
+  .order-detail-top-padding {
+    width: 100%;
+    height: 1.17rem;
+  }
+  .order-detail-success-time {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.4rem;
+    color: #666;
+  }
+  .order-detail-bottom-padding {
+    width: 100%;
+    height: 1.5rem;
+  }
+  .order-detail-success-group-cf{
+    background-image: url('../images/login/person_background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2rem;
+    height:2rem;
+    color:white;
+    text-align: center;
+    line-height: 2rem;
+    padding:0.2rem;
+  }
+}
+.wait-send-bottom{
+  .px2rem(bottom,0);
+}
+.order-bottom-bar {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  .order-btm-bar-cell {
+    font-size: 0.41rem;
+    text-align: center;
+    float: right;
+    margin: 0.2rem;
+    border: 1px solid #f63;
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+  }
+  .order-btm-bar-cell:active {
+    background-color: #ccc;
+  }
+}
+.logitics-circle {
+  .px2rem(width,10);
+  .px2rem(height,10);
+  .px2rem(border-radius,25);
+  .px2rem(margin-top,40);
+  .px2rem(margin-left,-7);
+  float: left;
+  background-color: #e6e6e6;
+  position: relative;
+  .px2rem(top,-5);
+  .px2rem(left,32);
+}
+.psb-selector-value-order-detail {
+  float: right;
+  height: 1.2rem;
+  font-size: 0.4rem;
+  line-height: 1.2rem;
+}
+.logistics {
+  background-color: #fff;
+  padding: 0.2rem;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  .address-icon-receipt {
+    font-size: 0.6rem;
+    float: left;
+    display: inline-block;
+    margin-top: 0.8rem;
+    .icomoon-receipt {
+      color: #4da41e;
+    }
+  }
+  .order-logis-info {
+    float: left;
+    width: 95%;
+    line-height: 0.6rem;
+    margin-left: 0.25rem;
+    .logis-address {
+      color: #4da41e;
+    }
+    .logidetail-address {
+      .px2rem(font-size,26);
+      color: #b1b1b1;
+    }
+    .logis-time {
+      color: #b1b1b1;
+    }
+    .logidetail-time {
+      .px2rem(font-size,22);
+      color: #b1b1b1;
+    }
+  }
+  .order-logis-info-detail {
+    .px2rem(margin-left,0);
+  }
+  .order-logis-icon-right {
+    font-size: 0.6rem;
+    float: right;
+    display: inline-block;
+    margin-top: 0.8rem;
+  }
+}
+.logitics-detail {
+  padding-left: 0;
+  .px2rem(margin-left,64);
+}
+
+.order-detail .pfy-title-title
+{
+  background-color: white !important;
+}

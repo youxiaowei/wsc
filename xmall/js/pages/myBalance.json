@@ -1,0 +1,10 @@
+{
+  "template":"myBalance.html",
+  "type": "myBalance",
+  "components": [
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+}

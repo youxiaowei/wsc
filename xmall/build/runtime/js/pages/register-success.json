@@ -1,0 +1,13 @@
+{
+  "template":"modify-success.html",
+  "type":"modify-success",
+  "header":{
+    "title":"注册成功",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  }
+}

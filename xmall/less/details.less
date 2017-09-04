@@ -1,0 +1,103 @@
+@import "common";
+.details-body{
+  .px2rem(padding-top,88);
+  background-color: #fcfcfc;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  font-family: 黑体;
+  z-index: 1;
+  display: block;
+  top: 0px;
+}
+
+.details-header{
+  background-color: #fff;
+  .px2rem(padding-top, 30);
+  .px2rem(padding-bottom, 28);
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
+  border-bottom-width: 1px;
+  //.px2rem(  border-bottom-width, 1);
+
+  .details-icon{
+    float: left;
+    .px2rem(left, 22);
+    .px2rem(width, 80);
+    .px2rem(height, 80);
+    .px2rem(margin-left, 22);
+    .px2rem(margin-right, 22);
+    .px2rem(border-radius, 5);
+  }
+  .details-name{
+    float: left;
+    .px2rem(font-size, 30);
+    .px2rem(line-height, 80);
+    color: #2e2e2e;
+  }
+  .details-name::before{
+    clear: both;
+  }
+}
+
+.details-list{
+  background-color: #fff;
+  .px2rem(margin-top,15);
+  border-top-style: solid;
+  border-top-color: #e5e5e5;
+  border-top-width: 1px;
+  //.px2rem(  border-top-width, 1);
+
+  .details-list-li{
+    .px2rem(height, 89);
+    .px2rem(line-height, 89);
+    border-bottom-style: solid;
+    border-bottom-color: #e5e5e5;
+    border-bottom-width: 1px;
+    //.px2rem(border-bottom-width, 1);
+    .px2rem(font-size, 26);
+
+    .details-list-li-left{
+      display: inline-block;
+      text-align: center;
+      .px2rem(width, 150);
+      color: #b1b1b1;
+    }
+    .details-list-li-right{
+      display: inline-block;
+      .px2rem(padding-left, 22);
+      color: #2e2e2e;
+    }
+
+    .details-list-li-icon{
+      float: right;
+      .px2rem(padding-right, 45);
+      .px2rem(padding-left, 45);
+      .px2rem(height, 89);
+      .px2rem(line-height, 89);
+      color: #009c12;
+      .px2rem(font-size, 32);
+    }
+    .details-list-li-icon::before{
+      clear: both;
+
+    }
+
+
+  }
+}
+
+.business-detailslist-view{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index: 121;
+  background-color: white;
+  transform: translate3d(100%,0,0);
+  transition: all 0.3s ease;
+}
+.business-detailslist-view-show{
+  transform: translate3d(0,0,0) !important;
+}

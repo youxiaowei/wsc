@@ -1,0 +1,30 @@
+<div class="login-page-view pwd-change">
+    <header class="headerbox" style="position: relative">
+        <div class="left-right nav-left goback">
+            <span class="icomoon icomoon-back"></span>
+        </div>
+        <div class='mid'>
+            <span class="common-title">修改密码</span>
+        </div>
+        <div class="left-right nav-right">
+
+        </div>
+    </header>
+    <div class="login-view-normal">
+        <div class="input-pwddiv" id="first-pwddiv">
+            <input class="input-pwd pwd-old" type="password" placeholder="请输入您的原密码" oninput="self.newpwdChange()"/>
+            <span class="pwd-old-switch" onclick="self.pwdTypeChange(1)"><span id="eye1" class="icomoon-conceal"></span></span>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="login-view-normal">
+        <div class="input-pwddiv">
+            <input class="input-pwd pwd-new" type="password" placeholder="请输入您的新密码" oninput="self.oldpwdChange()"/>
+            <span class="pwd-old-switch" onclick="self.pwdTypeChange(2)"><span id="eye2" class="icomoon-conceal"></span></span>
+        </div>
+    </div>
+    <div>
+        <button class="btnNext theme-border-color-contrast theme-backgorund-color-contrast" disabled onclick="self.btnNext()">下一步</button>
+    </div>
+
+</div>

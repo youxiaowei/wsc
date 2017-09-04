@@ -1,0 +1,31 @@
+{
+  "type": "product-detail-info",
+  "components": [
+    {
+      "type": "ProductDetailInfoHeadView"
+    },
+    {
+      "type": "MySegmentedView",
+      "items": [
+        {
+          "name": "商品详情",
+          "type": "ProductDetailInfoView"
+        },
+        {
+          "name": "规格参数",
+          "type" : "ProductListView",
+          "id": "ProductListView",
+          "template": "product-parameter.html",
+          "collection": "ProductParameterCollection"
+        },
+        {
+          "name": "商品评价",
+          "type": "ProductCommentView"
+        }
+      ]
+    },
+    {
+      "type": "ProductBottomBarView"
+    }
+  ]
+}

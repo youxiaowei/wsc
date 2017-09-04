@@ -1,0 +1,35 @@
+ <li class="table-view-cell media favorite-item list-content">
+  <div class="mallgj-logo">
+       <img src="./images/order/gjlogo.png" class="gj-logo"/>
+       <!-- <a href="" class="delect-red" ></a> -->
+  </div>
+  <div class="list-item">
+    <img class="item-media-object media-object pull-left item-media-object-single-line" src="<%=productList[0].productImage%>">
+    <div class="media-body item-media-body">
+      <div class="public-title"><%=productList[0].productName%></div>
+     <span class="publicstatus">
+          所需积分 <%=orderFee%>
+     </span>
+       <%if(orderStatus ==0){ %>
+          <a href="javascript:;" class="public-detail" data-id="" data-status="">待发货</a>
+      <% }else if(orderStatus ==1){%>
+          <a href="javascript:;" class="public-detail" data-id="" data-status="">已取消</a>
+      <% }else if(orderStatus ==2){%>
+          <a href="javascript:;" class="public-detail" data-id="" data-status="">完成</a>
+      <% }else if(orderStatus ==3){%>
+          <a href="javascript:;" class="public-detail" data-id="" data-status="">已发货</a>
+       <% } %>   
+      </div>
+    </div>    
+  <div class="shop-info-order">
+       <span style="display:none;"><%=orderStatus%></span>
+       <span style="display:none;"><%=orderId%></span>
+       
+       <span class="btn-order order-pay theme-color theme-border-color pull-right" data-name="payOrder">查看详情</span>
+
+       <span class="btn-order order-cancel theme-color theme-border-color pull-right" data-name="cancelOrder">再次兑换</span>
+     <!--   <%if(orderStatus ==3){ %>
+          <span class="btn-order order-ensure theme-color theme-border-color pull-right" data-name="ensureOrder">确认收货</span>
+       <% } %> -->
+ </div>      
+</li>  

@@ -1,0 +1,497 @@
+<!-- 添加全局loding效果：效果在runtime定义 + 位置style中定义-->
+    <!-- <div class="advertisement-pic" id="advertisement-pic"></div>
+    <div class="advertisement-countbox" id="advertisement-countbox" onclick="enterApp()">
+      <div class="advertisement-countbox-left">跳转</div>
+      <div class="advertisement-countbox-right" id="countbox-second"></div>
+    </div> -->
+    <div class="rotating-plane fix-center" id="rotating-plane"></div>
+    
+
+    <!-- 广告页面倒计时 -->
+  <script>
+   /*function showTime(time){
+     var t = time;
+     document.getElementById('countbox-second').innerHTML= t;
+     var t =t-1;
+     if(t < 0){
+       document.getElementById('advertisement-pic').remove();
+       document.getElementById('advertisement-countbox').remove();
+       return ;
+     }
+     setTimeout('showTime('+t+')',1000);
+   }
+     showTime(3);
+   function enterApp(){
+     document.getElementById('advertisement-pic').remove();
+     document.getElementById('advertisement-countbox').remove();
+   }  */
+   </script>
+  
+
+<div class="TabBarView"><nav class="bar bar-tab" style="display: none;"><a class="tab-item active" href="#home-navigate"><span class="icon icomoon-home_click"></span><span class="tab-label">首页</span></a><a class="tab-item" href="#category-navigate"><span class="icon icomoon-class"></span><span class="tab-label">分类</span></a><a class="tab-item" href="#shopingcart-navigate"><span class="icon icomoon-cart"></span><span class="tab-label">购物车</span></a><a class="tab-item" href="#my-navigate"><span class="icon icomoon-mine"></span><span class="tab-label">我的</span></a></nav><div class="NavigationView"><div class="PageView" style="transform: translate3d(-100%, 0px, 0px); backface-visibility: hidden; display: block; position: fixed; transition: all 0.4s cubic-bezier(0, 0, 0.25, 1);"><div id="home-body">
+  <div>
+    <div id="SearchMidPageView" class="SearchMidPageView" data-type="SearchMidPageView"><div class="search-mid-page"><div class="common-search search-style2"><div class="common-search-mid-view"><div class="common-search-left-inner"><span class="icomoon-search"></span><form action="javascript:void(0);" style="display:inline-block;width:85%;"><input type="text" placeholder="请输入商品"></form></div></div><div class="common-cancel-right"><span>取消</span></div></div><div></div></div></div>
+  </div>
+  <header class="common-search" id="home_header">
+    <div class="common-search-left common-search-icon">
+      <span class="icomoon-logo"></span>
+    </div>
+    <div class="common-search-mid">
+      <div class="common-search-left-inner">
+        <span class="icomoon-search"></span>
+        <input type="text" readonly="true" placeholder="查找商品">
+      </div>
+    </div>
+    <div class="common-search-right common-search-icon">
+      <span class="icomoon-talk"></span>
+      <span class="home-scan-title">消息</span>
+    </div>
+    <div class="home-header-bk theme-backgorund-color" id="home_header_bk" style="opacity: 0;">
+    </div>
+  </header>
+  <img class="home-header-bg" src="./images/home/home_title_bg.png">
+  <div class="home-carousel">
+    <div id="carousel" class="AdCardView" data-type="AdCardView"><div class="slick-container slick-initialized slick-slider"><div aria-live="polite" class="slick-list draggable" tabindex="0"><div class="slick-track" style="opacity: 1; width: 11178px; transform: translate3d(-6210px, 0px, 0px);"><div class="image slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100J1K0H4F60ZZX846D.jpg"></a></div><div class="image slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100W1K084FJ0ZJQYKUH.jpg"></a></div><div class="image slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/010041K0X4F30ZNNZI3L.jpg"></a></div><div class="image slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/010031K034FB0ZOJBFGQ.jpg"></a></div><div class="image slick-slide" data-slick-index="3" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100V1K0B4FN0ZQKO0R5.jpg"></a></div><div class="image slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100D1K0D4FB0ZYD0NY1.jpg"></a></div><div class="image slick-slide" data-slick-index="5" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100R1K0N4FX0ZZ6J7QT.jpg"></a></div><div class="image slick-slide" data-slick-index="6" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100J1K0H4F60ZZX846D.jpg"></a></div><div class="image slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160607/0100W1K084FJ0ZJQYKUH.jpg"></a></div></div></div><ul class="slick-dots" style="display: block;"><li class="" aria-hidden="true"><button type="button" data-role="none">1</button></li><li aria-hidden="true" class=""><button type="button" data-role="none">2</button></li><li aria-hidden="true" class=""><button type="button" data-role="none">3</button></li><li aria-hidden="true" class=""><button type="button" data-role="none">4</button></li><li aria-hidden="false" class="slick-active"><button type="button" data-role="none">5</button></li><li aria-hidden="true" class=""><button type="button" data-role="none">6</button></li><li aria-hidden="true" class=""><button type="button" data-role="none">7</button></li></ul></div></div>
+  </div>
+  <div class="home-group-buying home-active">
+    <div class="group-buying-label  home-active-label">套餐商品</div>
+    <img class="group-buying-image" src="./images/group/test-group.png">
+  </div>
+ 
+
+  <div class="home-floor">
+    <div class="recommend">
+
+      <div class="home-goods">
+        <div class="home-title ">
+          <div class="home-words">
+            商品展示
+          </div>
+        </div>
+        <div id="HomePushView" class="HomePushShopView" data-type="HomePushView" style="display: block;">
+        <div class="scroller">
+        
+        <div class="loadmore-loading" style="display: block;"><span class="icomoon-load listview-loadingbar"></span><span class="label">加载更多</span></div><div class="empty-view" style="display: none;">已经加载全部</div><div class="error-view" style="display: none;">网络异常</div></div></div>
+        <div id="HomePushViewLoading" class="AreaLoading ymall-loading-wrapper" data-type="AreaLoading" style="display: none;"><div class="spinner"><div class="spinner-img"></div></div></div>
+        <div class="home-bottom-padding"></div>
+      </div>
+    </div>
+  </div>
+</div></div><div class="PageView" style="transform: translate3d(-100%, 0px, 0px); position: fixed; top: 0px; left: 0px; backface-visibility: hidden; display: block; transition: all 0.4s cubic-bezier(0, 0, 0.25, 1);"><div id="goods-page">
+  <header class="headerbox goods-label-return-nav" style="opacity: 0;">
+    <div class="left-right nav-left goback">
+      <span class="icomoon icomoon-back"></span>
+    </div>
+    <div class="mid">
+      <span class="common-title">商品详情</span>
+    </div>
+    <div class="left-right nav-right header-menu">
+      <span class="icomoon icomoon-moremore"></span>
+    </div>
+  </header>
+  <div class="goods-label-return" style="opacity: 0.5;">
+    <div class="icomoon-back goods-label-back"></div>
+  </div>
+  <div class="goods-label-menu" style="opacity: 0.5;">
+    <div class="icomoon icomoon-moremore goods-label-menu-menu"></div>
+  </div>
+  <div style="position:relative">
+  <div class="itemdetial-top">
+  <div id="carousel" class="CarouselView" data-type="CarouselView"><div class="slick-container slick-initialized slick-slider"><div aria-live="polite" class="slick-list draggable" tabindex="0" style="height: 2453px;"><div class="slick-track" style="opacity: 1; width: 6210px; transform: translate3d(-3726px, 0px, 0px);"><div class="image slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160604/010081K0O4CX133LBQ6Y.jpg"></a></div><div class="image slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160613/0100Q1K0K4LK10U8UL2L.jpg"></a></div><div class="image slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160604/0100Z1K0T4CV133LYP3B.png"></a></div><div class="image slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160604/010081K0O4CX133LBQ6Y.jpg"></a></div><div class="image slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160613/0100Q1K0K4LK10U8UL2L.jpg"></a></div></div></div><ul class="slick-dots" style="display: block;"><li class="" aria-hidden="true"><button type="button" data-role="none">1</button></li><li aria-hidden="true" class=""><button type="button" data-role="none">2</button></li><li aria-hidden="false" class="slick-active"><button type="button" data-role="none">3</button></li></ul></div></div>
+  </div>
+  <div class="tips-without-cover"></div>
+  <div class="goods-label" style=" overflow: hidden;">
+    <div class="goods-label-title">
+      <div class="goods-title-name">aaa</div>
+      <!-- <div class="goods-title-share">
+        <div class="icomoon-share goods-share">
+        </div>
+        <div class="goods-title-collection-name">
+          分享
+        </div>
+      </div> -->
+      <div class="goods-title-money">
+        <div class="goods-title-rmb">¥</div>
+        <div class="goods-title-num">10</div>
+        <div class="goods-title-box theme-backgorund-color" style="display: none;"></div>
+      </div>
+      <div class="goods-sale-infomation">
+        <!-- <div class="express-fee"><span>快递 </span><span>6元</span></div> -->
+        <div class="month-sale"><span>月销 </span><span class="month-sale-val">0</span></div>
+      </div>
+    </div>
+    <div class="goods-label-spec">
+      <div class="goods-spec-box">
+        <div class="goods-spec-name">
+          选择 商品规格
+        </div>
+        <div class="goods-spec-selected"></div>
+      </div>
+      <div class="goods-spec-select icomoon-details">
+      </div>
+    </div>
+    <div class="goods-label-coupon">
+      <div class="goods-coupon-title">
+          <span>优惠&nbsp;&nbsp;可享受以下优惠</span>
+          <span class="icomoon icomoon-highpull launch-ico coupon-launch-ico" style="display: none;"></span>
+      </div>
+      <div class="goods-coupon-detail coupon-detail-show">
+          <div class="coupon-row" style="display:none"><span class="coupon-tag">满减</span><span class="itemdetail-discount">无</span></div>
+          <div class="coupon-row" style="display:none"><span class="coupon-tag">送储粮通宝</span><span class="itemdetail-points">无</span></div>
+          <div class="coupon-row-last">
+              <span class="coupon-tag">优惠套餐</span>
+              <span class="coupon-desc">无</span>
+              <span class="icomoon icomoon-details launch-ico" style="display: none;"></span>
+          </div>
+          <div class="packages-details" style="display: none;">
+              <div class="flex-layout packages-details-row">
+              </div>
+          </div>
+      </div>
+      <!-- <div class="goods-service"><span>服务</span><span class="goods-service-info">7天无理由退货</span></div> -->
+    </div>
+
+    <div class="goods-label-evaluate">
+      <div class="goods-evaluate-title">
+        <div class="goods-evaluate-number">
+          商品评价(<span class="goods-comments-number"></span>)
+        </div>
+      </div>
+      <div class="goods-evaluate-filter">
+        <div id="all-evaluate" data-index="0" class="evaluate-tab evaluate-tab-active">全部(<span id="allComNum"></span>)</div>
+        <div id="good-evaluate" data-index="1" class="evaluate-tab">很好(<span id="goodComNum"></span>)</div>
+        <div id="normal-evaluate" data-index="2" class="evaluate-tab">一般(<span id="comComNum"></span>)</div>
+        <div id="bad-evaluate" data-index="3" class="evaluate-tab">较差(<span id="badComNum"></span>)</div>
+      </div>
+      <div class="goods-evaluate-list">
+        <ul class="goods-evaluate-ul">
+        </ul>
+        <div class="no-comment" style="text-align: center;margin-top: 20px;width: inherit;height: 50px;color: #b1b1b1;">暂无评价</div>
+      </div>
+      <div class="more-comment"><span style="vertical-align: middle;">查看更多评论</span><span class="icomoon icomoon-details comment-ico"></span></div>
+    </div>
+    <div class="goods-label-collection">
+      <span class="goods-collection-words">点击查看图文详情</span><span class="goods-collection-icon icomoon-spread"></span>
+    </div>
+    <div id="ProductBottomBarView" class="BaseView" data-type="ProductBottomBarView"><div class="bar bar-tab product-bottom-bar yyfixed" style="display: none; visibility: hidden; position: static;">
+  <!--<a class="tab-item tab-left tab-tel">
+    <span class="icon icomoon-phone pb-tab"></span>
+    <span class="tab-label pb-tab">电话</span>
+  </a>
+  -->
+  <a class="tab-item tab-left pb-tab first-tab goods-title-selected collection-goods">
+      <div class="collect-in">
+        <span class="ico ico-star icomoon-starunclick goods-title-collection"></span>
+        <span class="tab-label" style="display: block">收藏</span>
+      </div>
+  </a>
+  <a class="tab-item tab-left pb-tab item-shopcart">
+
+    <div class="shopcart-in">
+        <div class="goods-shoppingcart-tips">
+        </div>
+        <span class="icon icomoon-cart"></span>
+        <span class="tab-label">购物车</span>
+    </div>
+  </a>
+  <a class="tab-item item-cart tab-right">加入购物车</a>
+  <a class="tab-item item-buy theme-backgorund-color tab-right">  轻松购  </a>
+</div>
+</div>
+  </div>
+</div>
+</div>
+
+<div class="add-shop-cart yyfixed" style="visibility: hidden; position: static;">
+  <div class="shop-cart-info">
+    <div class="shopcart-info-title">
+      <img class="info-title-img" src="//img.alicdn.com/bao/uploaded/i3/TB1sIZ1JFXXXXcfXXXXXXXXXXXX_!!0-item_pic.jpg_480x480q50.jpg" alt="">
+      <div class="info-title-words">
+        <div class="info-title-words-collection">
+        </div>
+        <span class="info-title-words-rmb">
+          ¥
+        </span>
+        <span class="info-title-words-num">
+        </span>
+      </div>
+      <div class="info-title-svg icomoon-close"></div>
+    </div>
+    <div class="shopcart-info-spec"><div class="spec-title">测试规格</div><div class="first-spec"><span firstindex="0" data-specid="0100Q1K0G4LF0RFA6MK4" class="spec-item">80g</span></div><div class="second-spec"></div></div>
+    <div class="shopcart-info-number">
+      <div class="info-number-title">
+        数量 
+      </div>
+      <div class="info-number-tips">
+      </div>
+      <div class="mui-number">
+        <button type="button" class="mui-numbox-btn-minus icomoon icomoon-minus"></button>
+        <input class="mui-numbox-input" type="tel" value="1" min="1" max="10000">
+        <button type="button" class="mui-numbox-btn-plus icomoon icomoon-plus"></button>
+      </div>
+    </div>
+    <div class="shopcart-info-btn theme-backgorund-color">
+      确定
+    </div>
+  </div>
+</div>
+
+<div>
+  <div id="ShareView" class="ShareView" data-type="ShareView"><div class="share-popup-view yyfixed" style="visibility: hidden; position: static;">
+    <div class="share-select-pad">
+        <div class="title-cross-line"></div>
+        <div class="share-title">推荐给好友</div>
+        <div class="share-type shortMessage-share"><div class="share-ico icomoon-message"></div><div class="share-describe">短信</div></div>
+        <div class="share-type QQ-share"><div class="share-ico icomoon-qq"></div><div class="share-describe">QQ</div></div>
+        <div class="share-type wechat-share"><div class="share-ico icomoon-weixin"></div><div class="share-describe">微信</div></div>
+        <div class="share-type wechat-moment-share"><div class="share-ico icomoon-friend"></div><div class="share-describe">朋友圈</div></div>
+        <div class="share-type weibo-share"><div class="share-ico icomoon-weibo"></div><div class="share-describe">微博</div></div>
+    </div>
+    <div class="cancel-share">取消</div>
+</div>
+<div class="common-message-cover-no"></div>
+</div>
+</div>
+
+<div class="business-category-view-more">
+  <component id="business-category"></component>
+</div>
+
+<div class="goods-collection-info">
+    <div class="backToGoods">
+        <span class="icomoon-back"></span>
+    </div>
+    <div id="topBlank"></div>
+    <div id="MySegmentedView" class="MySegmentedView" data-type="MySegmentedView"><div class="segmented-control"><a class="control-item segmented-item segmented-item-active theme-color theme-border-color" data-index="0">商品详情</a><a class="control-item segmented-item" data-index="1">规格参数</a><a class="control-item segmented-item" data-index="2">售后服务</a></div><div class="segmented-content"><div id="ProductDetailInfoView" class="ProductDetailInfoView" data-type="ProductDetailInfoView"></div></div></div>
+</div>
+
+<div class="bigImg-view yyfixed" style="visibility: hidden; position: static;">
+    <div id="carousel1" class="CarouselView" data-type="CarouselView"><div class="slick-container slick-initialized slick-slider"><div aria-live="polite" class="slick-list draggable" tabindex="0" style="height: 1242px;"><div class="slick-track" style="opacity: 1; width: 6210px; transform: translate3d(-1242px, 0px, 0px);"><div class="image slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160604/010081K0O4CX133LBQ6Y.jpg"></a></div><div class="image slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160613/0100Q1K0K4LK10U8UL2L.jpg"></a></div><div class="image slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160604/0100Z1K0T4CV133LYP3B.png"></a></div><div class="image slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160604/010081K0O4CX133LBQ6Y.jpg"></a></div><div class="image slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1242px;"><a><img class="" src="http://szli.yonyou.com//upload/20160613/0100Q1K0K4LK10U8UL2L.jpg"></a></div></div></div><ul class="slick-dots" style="display: block;"><li class="slick-active" aria-hidden="false"><button type="button" data-role="none">1</button></li><li aria-hidden="true"><button type="button" data-role="none">2</button></li><li aria-hidden="true"><button type="button" data-role="none">3</button></li></ul></div></div>
+</div>
+<div>
+    <div id="PopupMenu" class="PopupMenu" data-type="PopupMenu"><div class="root-popup-menu">
+  <div class="popup-menu">
+    <div class="menu-arrow">
+      <span class="icomoon icomoon-pullup"></span>
+    </div>
+    <div class="menu-content">
+      <div class="menu-home menu-item">
+        <span class="menu-icomoon icomoon icomoon-home pull-left"></span>
+        <span class="pull-right">首页</span>
+      </div>
+      <div class="menu-message menu-item">
+        <span class="menu-icomoon icomoon icomoon-talk pull-left"></span>
+        <span class="pull-right">消息</span>
+      </div>
+      <div class="menu-search menu-item">
+        <span class="menu-icomoon icomoon icomoon-search pull-left"></span>
+        <span class="pull-right">搜索</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <div id="SearchMidPageView" class="SearchMidPageView" data-type="SearchMidPageView"><div class="search-mid-page"><div class="common-search search-style2"><div class="common-search-mid-view"><div class="common-search-left-inner"><span class="icomoon-search"></span><form action="javascript:void(0);" style="display:inline-block;width:85%;"><input type="text" placeholder="请输入商品"></form></div></div><div class="common-cancel-right"><span>取消</span></div></div><div></div></div></div>
+</div></div><div class="PageView" style="transform: none; position: relative; top: 0px; left: 0px; backface-visibility: hidden; display: block; transition: all 0.4s cubic-bezier(0, 0, 0.25, 1);"><header class="headerbox">
+      <div class=" nav-left header-icon-back address-title-icon">
+          <span class="icomoon icomoon-back"></span>
+      </div>
+      <div class="mid">
+        <span class="common-title">确认订单</span>
+      </div>
+      <div class="left-right nav-right">
+        <a class="header-icon-menu icomoon icomoon-moremore"></a>
+      </div>
+  </header>
+<div class="create-order">
+
+  <div id="AddressInOrderView" class="BaseView" data-type="AddressInOrderView"><div class="address-in-order">
+  <div class="address-icon-map">
+    <div class="icomoon icomoon-location">
+    </div>
+  </div>
+  <div class="order-address">
+    <div class="order-address-user-info">
+      <div class="order-address-user-name">
+        <span class="address-user-name-des">收件人：</span><span>齐天大圣</span>
+      </div>
+      <div class="order-address-user-phone">15891160778</div>
+    </div>
+    <div class="order-address-address">
+      <span>北京北京市海淀区北清路</span>
+    </div>
+  </div>
+  <div class="order-address-icon-right"><span class="icomoon icomoon-more"></span></div>
+</div>
+</div>
+  <div id="CreateOrderListView" class="ListView" data-type="ListView"><div class="scroller">
+  <div class="confirm-order-goods">
+            <img src="http://szli.yonyou.com//upload/20160602/010041K0V4AC0QL2IF8V.jpg" alt="" class="confirm-order-img">
+            
+        <div class="goods-order-title cofirm-order-top">
+                <div class="package-list-title">
+                    101020套餐商品 大米+红桃+甘露
+                </div>
+                <div class="package-list-Selling">超值好礼 促销优惠<i>热销</i></div>
+                <div class="package-list-money">￥12202</div>
+                <div class="goods-order-number">X1</div>
+            </div>
+           <p class="confirm-order-deliver-time">预计发货时间 2016.8.6</p> 
+    </div>
+            <div class="scroller">
+                    <ul class="table-view" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); margin-bottom: 5px; background-color: rgb(255, 255, 255);">
+                        <li class="table-view-cell media favorite-item list-content" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221);">
+                            <div class="list-item">
+                                <img class="item-package-detail-img" src="http://szli.yonyou.com//upload/20160602/0100R1K064AC0QJ7K7UW.jpg">
+                                <div class="media-body item-media-body">
+                                    <div class="item-package-detail-title">
+                                        <div class="item-package-detail-name">红枣一箱想要多少要多少</div>
+                                        <div class="item-net-content"></div>
+                                    </div>
+                                    <div class="item-package-detail-price">
+                                        <div class="price-money">￥15684</div>
+                                        <div class="right-text">x1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="table-view-cell media favorite-item list-content" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221);">
+                            <div class="list-item">
+                                <img class="item-package-detail-img" src="http://szli.yonyou.com//upload/20160602/0100R1K064AC0QJ7K7UW.jpg">
+                                <div class="media-body item-media-body">
+                                    <div class="item-package-detail-title">
+                                        <div class="item-package-detail-name">红枣一箱想要多少要多少</div>
+                                        <div class="item-net-content"></div>
+                                    </div>
+                                    <div class="item-package-detail-price">
+                                        <div class="price-money">￥15684</div>
+                                        <div class="right-text">x1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="table-view-cell media favorite-item list-content" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221);">
+                            <div class="list-item">
+                                <img class="item-package-detail-img" src="http://szli.yonyou.com//upload/20160602/0100R1K064AC0QJ7K7UW.jpg">
+                                <div class="media-body item-media-body">
+                                    <div class="item-package-detail-title">
+                                        <div class="item-package-detail-name">红枣一箱想要多少要多少</div>
+                                        <div class="item-net-content"></div>
+                                    </div>
+                                    <div class="item-package-detail-price">
+                                        <div class="price-money">￥15684</div>
+                                        <div class="right-text">x1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+  <div style="display: block;"></div><div class="empty-view" style="display: none;">已经加载全部</div><div class="error-view" style="display: none;">网络异常</div></div></div>
+  <div class="group-cf-operation" style="display: none;">
+    <div class="group-cf-left">份数（限购2份）</div>
+    <div class="group-cf-right">
+      <span class="icomoon icomoon-minus"></span>
+      <span class="group-cf-text">1</span>
+      <span class="icomoon icomoon-plus"></span>
+    </div>
+  </div>
+  <div class="cf-reward-info" style="display: none;">
+    <div class="cf-reward-des">回报内容</div>
+    <div class="cf-reward-name-number">
+      <span class="cf-reward-name">古井贡酒特娘</span>
+      <span class="cf-reward-name">x1</span>
+    </div>
+    <div class="cf-reward-content">感谢您的支持，您将用低于商品原价的价格购买</div>
+    <div class="cf-reward-mark">项目结束两天内发货</div>
+  </div>
+  <div class="common-padding"></div>
+  <!-- 支付方式、配送方式-->
+  <div class="pay-send-selector">
+    <!-- <div class="send-method-order psb-selector">
+    <span class="send-method-des psb-selector-des">支付配送</span>
+    <span class="icomoon icomoon-more psb-selector-more"></span>
+    <span class="pay-method-value"></span>
+    <span class="send-method-value"></span>
+  </div> -->
+   <div class="send-method-order psb-selector">
+      <span class="pay-send-des psb-selector-des">配送方式</span>
+      <span class="icomoon icomoon-more psb-selector-more"></span>
+      <div id="point-send-value" class="send-method-value psb-selector-value"></div>
+    </div>
+    <div class="bill-order-info psb-selector">
+      <span class="bill-method-des psb-selector-des">发票信息</span>
+      <span class="icomoon icomoon-more psb-selector-more"></span>
+      <div class="bill-method-value psb-selector-value">不需要</div>
+    </div>
+  </div>
+  <div class="order-message">
+    <input type="text" placeholder="备注：您有什么要求，可以写在这里" class="message">
+  </div>
+  <div class="goods-total">
+    <div class="goods-total-price">
+      <span>商品金额</span>
+      <div class="total-price">
+        <span class="total-price-text">合计：</span>
+        <span class="total-price-num theme-color">¥10</span>
+      </div>
+    </div>
+  </div>
+  <div class="goods-total">
+      <div class="goods-total-freight">
+        <span>运费</span>
+        <div class="total-freight theme-color">+ 0.00</div>
+      </div>
+  </div>
+  <div class="goods-total">
+      <div class="goods-total-freight">
+        <span>活动折扣</span>
+        <div class="total-discount theme-color">- 0</div>
+      </div>
+  </div>
+  <div class="order-discount-info-view" style="display: block;">
+    <div class="use-coupon-item">
+      <div class="use-coupon small-order-item">使用优惠券</div>
+      <div id="CouponView" class="CouponView" data-type="CouponView"><div class="scroller"><ul class="table-view"></ul><div style="display: block;"></div><div class="empty-view" style="display: none;">已经加载全部</div><div class="error-view" style="display: none;">网络异常</div></div></div>
+    </div>
+    <!-- <div class="use-credit-card">
+      <div class="small-order-item">使用礼品卡</div>
+      <component id='CreditCardView'></component>
+    </div> -->
+  </div>
+</div>
+<!-- 底部bar -->
+
+ <div class="order-btm-bar">
+   <div class="order-total-fee">
+     <span class="order-total-fee-des">共计：</span>
+     <span class="fee-unit">¥</span>
+     <span class="order-total-fee-fee">10</span>
+   </div><div class="order-submit theme-backgorund-color">去结算</div>
+ </div>
+ <div>
+   <div id="SearchMidPageView" class="SearchMidPageView" data-type="SearchMidPageView"><div class="search-mid-page"><div class="common-search search-style2"><div class="common-search-mid-view"><div class="common-search-left-inner"><span class="icomoon-search"></span><form action="javascript:void(0);" style="display:inline-block;width:85%;"><input type="text" placeholder="请输入商品"></form></div></div><div class="common-cancel-right"><span>取消</span></div></div><div></div></div></div>
+   <div id="PopupMenu" class="PopupMenu" data-type="PopupMenu"><div class="root-popup-menu">
+  <div class="popup-menu">
+    <div class="menu-arrow">
+      <span class="icomoon icomoon-pullup"></span>
+    </div>
+    <div class="menu-content">
+      <div class="menu-home menu-item">
+        <span class="menu-icomoon icomoon icomoon-home pull-left"></span>
+        <span class="pull-right">首页</span>
+      </div>
+      <div class="menu-message menu-item">
+        <span class="menu-icomoon icomoon icomoon-talk pull-left"></span>
+        <span class="pull-right">消息</span>
+      </div>
+      <div class="menu-search menu-item">
+        <span class="menu-icomoon icomoon icomoon-search pull-left"></span>
+        <span class="pull-right">搜索</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ </div>
+</div></div></div>

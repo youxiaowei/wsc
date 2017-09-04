@@ -1,0 +1,27 @@
+{
+  "template": "shopingcart.html",
+  "type": "shopingcart",
+  "components":[
+    {
+      "id":"SearchMidPageView",
+      "type":"SearchMidPageView"
+    },
+    {
+      "id":"shopingcartlistview",
+      "type":"ShopingcartListView"
+    },
+    {
+      "id":"PushForYouView",
+      "type":"PushForYouView"
+    },
+    {
+      "id":"CartEditorView",
+      "type":"CartEditorView"
+    },
+    {
+      "id":"PopupMenu",
+      "type":"PopupMenu"
+    }
+  ]
+
+}

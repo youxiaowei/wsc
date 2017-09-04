@@ -1,0 +1,35 @@
+{
+  "type": "paySelector",
+  "template":"paySelector.html",
+  "header": {
+    "title": "选择支付及配送方式",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    },
+    {
+      "type": "link",
+      "icon": "header-icon-menu icomoon-moremore",
+      "pull": "right",
+      "event": "menuMore"
+      }]
+  },
+  "components":[
+  {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+  },
+  {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+  },
+  {
+      "id": "SenderSelect",
+      "type": "SenderSelect",
+      "collection": "senderCollection",
+      "template": "senderSelect.html"
+  }
+  ]
+}

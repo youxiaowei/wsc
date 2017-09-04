@@ -1,0 +1,18 @@
+{
+  "template": "brand.html",
+  "type":"brand",
+  "components" : [
+    {
+      "id":"cate_search_midpage",
+      "type":"SearchMidPageView"
+    },
+    {
+      "type": "HomePushBrandView",
+      "id" : "HomePushBrandView",
+      "template": "brand.html",
+      "paging": true,
+      "autoload":false,
+      "collection": "BrandListCollection"
+    }
+  ]
+}

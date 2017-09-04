@@ -1,0 +1,21 @@
+{
+  "template":"messageCenter.html",
+  "type": "messageCenter",
+  
+  "components": [
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "type": "ListView",
+      "id":"mc-list",
+      "collection": "MessageCenterCollection",
+      "template": "messagecenterlistview.html"
+    }
+  ]
+}

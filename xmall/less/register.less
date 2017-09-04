@@ -1,0 +1,176 @@
+@import "common";
+.register-page-view{
+  background-color:#fff;
+  height:100%;
+
+  .register-view-normal{
+    margin:0px 0px;
+    padding:0px 0px;
+
+    .input-label-account{
+      color: #666666;
+      .px2rem(font-size,30);
+    }
+    .input-background{
+      .px2rem(margin-left,30);
+      .px2rem(margin-right,30);
+      background-color:#fff;
+      border-bottom:solid 1px #ccc;
+    }
+    .input-accountdiv{
+      vertical-align: middle;
+      .px2rem(height,100);
+      .px2rem(line-height,100);
+      background-color:#fff;
+    }
+    .reg-input-account{
+      border:0px;
+      width:80%;
+      .px2rem(height,50);
+      color: #666666;
+      .px2rem(font-size,30);
+      .px2rem(line-height,50);
+    }
+    .input-pwddiv{
+      .px2rem(margin-left,30);
+      .px2rem(margin-right,30);
+      border-bottom:solid 1px #ccc;
+      vertical-align: middle;
+      .px2rem(height,100);
+      .px2rem(line-height,100);
+      margin-bottom:20px;
+      background-color:#fff;
+      a{
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+    .reg-input-pwd{
+      border:0px;
+      width:60%;
+      color: #666666;
+      .px2rem(height,50);
+      .px2rem(font-size,30);
+      .px2rem(line-height,50);
+    }
+  }
+  .btnRegister{
+    .px2rem(height,88);
+    .px2rem(width,690);
+    .px2rem(margin-bottom,30);
+    margin: 10px auto;
+    display: block;
+    padding: 15px 0;
+    .px2rem(font-size,30);
+    .px2rem(border-radius,8);
+    cursor: pointer;
+    font-family:"Microsoft YaHei";
+    white-space: nowrap;
+    color: #fff;
+    border:1px solid ;
+  }
+  .btnRegister.active{
+    .px2rem(height,88);
+    .px2rem(width,690);
+    margin: 10px auto;
+    display: block;
+    padding: 15px 0;
+    .px2rem(font-size,30);
+    .px2rem(border-radius,8);
+    cursor: pointer;
+    font-family:"Microsoft YaHei";
+    white-space: nowrap;
+    color: #fff;
+    border:1px solid;
+  }
+  .register-toast{
+    position: fixed;
+    background-color: #000000;
+    .px2rem(border-radius,10);
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    .px2rem(line-height,80);
+    .px2rem(width,300);
+    .px2rem(height,94);
+    .px2rem(margin-left,224);
+    .px2rem(bottom,100);
+    display: none;
+    opacity: 0;
+
+    p{
+      color:#fff;
+      word-wrap: break-word;
+      .px2rem(font-size,26);
+    }
+  }
+  .register-toast-active{
+    display: block;
+    opacity: 0.7;
+  }
+  .btn-retransmit {
+    float: right;
+    overflow: hidden;
+    .px2rem(width,200);
+    .px2rem(height,60);
+    .px2rem(border-radius,8);
+    .px2rem(line-height,60);
+    .px2rem(margin-top,20);
+    .px2rem(font-size,24);
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  .btn-retransmit-disabled {
+    box-shadow: none;
+    border: 0;
+    background: #e2e2e2;
+    cursor: default;
+    color: #bdbdbd;
+  }
+  .bd-agree {
+    position: relative;
+    .px2rem(height,44);
+    .px2rem(padding-left,80);
+    .px2rem(margin-top,40);
+    .px2rem(margin-bottom,60);
+    .px2rem(line-height,40);
+    .px2rem(font-size,26);
+    color: #b1b1b1;
+  }
+  .bd-st{
+    position: absolute;
+    top: 0px;
+    .px2rem(left,30);
+    .px2rem(width,40);
+    .px2rem(height,40);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-property:-webkit-transform,border,width;
+    -moz-transition-property: -moz-transform,border,width;
+    transition-property: transform,border,width;
+  }
+  .bd-st::after{
+    .px2rem(width,23);
+    .px2rem(height,10);
+    .px2rem(right,6);
+    .px2rem(top,8);
+    border-top:3px solid white;
+    border-right:3px solid white;
+    transform: rotate(135deg);
+    position: absolute;
+    content: "";
+  }
+  .register-tologin-text{
+    .px2rem(margin-top,40);
+    .px2rem(font-size,26);
+    .px2rem(line-height,26);
+    .px2rem(padding-right,20);
+    text-align: right;
+    color: #666666;
+  }
+}

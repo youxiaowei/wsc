@@ -1,0 +1,54 @@
+{
+  "template": "home.html",
+  "type":"home",
+  "components": [
+  {
+    "id":"SearchMidPageView",
+    "type":"SearchMidPageView"
+  },
+  {
+      "id": "carousel",
+      "type": "AdCardView",
+      "slickOptions": {
+        "lazyLoad": "progressive",
+        "dots": true,
+        "autoplay": true,
+        "swipeToSlide": true,
+        "speed": 300,
+        "arrows":false,
+        "adaptiveHeight":true
+      },
+      "collection":"SlickViewCollection"
+    },
+    {
+            "id": "packagecarousel",
+            "type": "CarouselView",
+            "slickOptions": {
+                "lazyLoad": "progressive",
+                "dots": true,
+                "autoplay": true,
+                "swipeToSlide": true,
+                "speed": 300,
+                "arrows": false
+            },
+            "collection": "packageDetailCollection"
+    },
+    {
+      "type":"AreaLoading",
+      "id":"HomeTopicViewLoading"
+    },
+    {
+      "type": "HomePushView",
+      "id" : "HomePushView",
+      "template": "homepush.html",
+      "autoload":false,
+      "collection": "HomeRecommendModel",
+      "paging":true,
+      "isAutoLoadMore":true
+    },
+    {
+      "type":"AreaLoading",
+      "id":"HomePushViewLoading"
+    }
+  ]
+}

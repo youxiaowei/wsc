@@ -1,0 +1,63 @@
+{
+  "template": "itemdetail.html",
+  "type": "itemdetail",
+  "components": [{
+      "id": "carousel",
+      "type": "CarouselView",
+      "slickOptions": {
+        "lazyLoad": "progressive",
+        "dots": true,
+        "autoplay": true,
+        "swipeToSlide": true,
+        "speed": 300,
+        "arrows": false
+      },
+      "collection": "itemDetailCollection"
+    },  {
+      "type": "ProductBottomBarView",
+      "id": "ProductBottomBarView",
+      "collection": "ShoppingcartnumCollection"
+    }, {
+      "type": "MySegmentedView",
+      "id": "MySegmentedView",
+      "items": [{
+        "id": "ProductDetailInfoView",
+        "name": "商品详情",
+        "type": "ProductDetailInfoView"
+      }, {
+        "name": "规格参数",
+        "type": "ProductListView",
+        "id": "ProductListView",
+        "template": "product-parameter.html",
+        "collection": "ProductParameterCollection",
+        "autoload": "false"
+      }, {
+        "id": "ProductCommentView",
+        "name": "售后服务",
+        "type": "ProductDetailInfoView"
+      }]
+    }, {
+      "id": "carousel1",
+      "type": "CarouselView",
+      "slickOptions": {
+        "lazyLoad": "progressive",
+        "dots": true,
+        "autoplay": false,
+        "swipeToSlide": true,
+        "speed": 300,
+        "arrows": false
+      },
+      "collection": "itemDetailCollection"
+    }, {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "ShareView",
+      "type": "ShareView"
+    }
+  ]
+}

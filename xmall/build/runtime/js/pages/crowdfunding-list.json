@@ -1,0 +1,19 @@
+{
+  "type":"crowdfunding-list",
+  "template":"crowdfunding-list.html",
+  "components":[
+    {
+      "id":"GroupBuyListView",
+      "type":"GroupBuyListView",
+      "template":"crowdfunding-list-item.html",
+      "collection":"CrowdfundingCollection"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

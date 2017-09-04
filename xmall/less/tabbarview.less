@@ -1,0 +1,48 @@
+@import "common.less";
+/*
+body,nav,.PageView,.TabBarView{
+  .px2rem_important(width,750);
+  margin: 0 auto !important;
+  h1,header,.title{
+    height:@head-line-height !important;
+    line-height:@head-line-height !important;
+    font-size: 0.5rem !important;
+  }
+}
+*/
+
+
+
+.tab-item,.bar-tab{
+  .px2rem_important(height,90);
+  background-color: #f5f5f5;
+}
+.tab-label {
+  font-size: 0.267rem;
+}
+.bar-tab .tab-item .icon{
+  //font-size: 0.587rem !important;
+  .px2rem_important(font-size,32);
+  width: auto;
+  height: auto;
+  margin-bottom: 0.15rem;
+}
+.bar-tab .tab-item .icon ~ .tab-label{
+  font-size: 0.267rem;
+}
+.page-with-header{
+  .px2rem_important(padding-top,88);
+  header{
+    h1{
+      font-size: 0.5rem !important;
+      .px2rem_important(height,88);
+      line-height:@head-line-height !important;
+    }
+    .px2rem_important(height,88);
+  }
+
+}
+.icon{
+  font-size: 30px !important;
+
+}

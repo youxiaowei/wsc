@@ -1,0 +1,18 @@
+{
+  "template": "package-commodity.html",
+  "type":"package-commodity",
+  "components":[
+    {
+      "id":"GroupBuyListView",
+      "type":"GroupBuyListView",
+      "template":"package-commodity-item.html",
+      "collection":"packageCollection",
+       "paging": true,
+      "autoload": false
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+}

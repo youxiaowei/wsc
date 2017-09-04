@@ -1,0 +1,37 @@
+{
+  "type": "overdueCoupon",
+  "template": "overdueCoupon.html",
+  "header": {
+    "title": "优惠券",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    },
+    {
+      "type": "link",
+      "icon": "header-icon-menu icomoon-moremore",
+      "pull": "right",
+      "event": "menuMore"
+      }]
+  },
+  "components": [
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "type": "ListView",
+      "id":"OverdueCouponView",
+      "autoload":false,
+      "collection": "OverdueCouponCollection",
+      "template": "overdue-coupon-view.html"
+    }
+
+  ]
+}

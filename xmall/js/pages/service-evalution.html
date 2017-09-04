@@ -1,0 +1,65 @@
+<div class="service-evalution-view">
+<div class="service-evalution-title">
+    <header class="headerbox">
+        <div class=" nav-left header-icon-back address-title-icon">
+            <span class="icomoon icomoon-back"></span>
+        </div>
+        <div class='mid'>
+            <span class="common-title">服务评价</span>
+        </div>
+        <div class="left-right nav-right">
+            <a class="header-icon-menu icomoon icomoon-moremore"></a>
+        </div>
+
+    </header>
+
+    <div class="blank-top"></div>
+    <div>
+        <component id='SearchMidPageView'/>
+        <component id="PopupMenu"/>
+    </div>
+</div>
+
+<div class="select-comment-type">
+    <div class="service-comment-type-group first-group" data-index="1">
+        <span class="type-choice-ico first-ico icomoon-choice theme-color" data-index="1"></span>
+        <span class="service-comment-type" data-index="1">评价上级</span>
+    </div>
+    <div class="service-comment-type-group" style='display:none' data-index="2" >
+        <span class="type-choice-ico second-ico icomoon-choicebox" data-index="2"></span>
+        <span class="service-comment-type" data-index="2">评价渠道机构</span>
+    </div>
+</div>
+<div class="select-comment-type select-organization">
+    <div class="row-left">
+        <span class="organization-select-title">选择渠道机构</span>
+        <span class="select-tips">(为您配送的其他机构)</span>
+    </div>
+    <div class="row-right select-right"><span class="sender-choose"></span><span class="icomoon-details"></span></div>
+</div>
+
+<div class="service-comment-content">
+    <div class="service-comment-level">
+        <div class="comment-target">
+            <span>您的上级是: </span>
+            <span class="comment-target-name"></span>
+            <span class="comment-target-contact"></span>
+        </div>
+        <div class="level-group">
+            <div class="comment-level-block evaluate-tab-active" data-index="5">非常好</div>
+            <div class="comment-level-block comment-level-block4" data-index="4">满意</div>
+            <div class="comment-level-block comment-level-block3" data-index="3">一般</div>
+            <div class="comment-level-block comment-level-block2" data-index="2">不满意</div>
+            <div class="comment-level-block comment-level-block1" data-index="1">再也不来</div>
+        </div>
+    </div>
+    <div class="service-comment-input-box">
+        <textarea class="input-area" id ="input-areaOfService" placeholder="写点什么吧,以便为其他小伙伴提供参考,字数在10-200个字"></textarea>
+    </div>
+</div>
+<div class="comment-submit-btn">提交评价</div>
+</div>
+
+<div class="sender-sellect-container">
+    <component id="SenderSelect"/>
+</div>

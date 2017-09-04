@@ -1,0 +1,90 @@
+@import "common";
+.headerOnTop{
+  position: relative !important;
+}
+.pointTrans,.searchReceiver{
+  .px2rem(height,88);
+  .px2rem(line-height,88);
+  .px2rem(padding-left,20);
+  .px2rem(padding-right,20);
+  .px2rem(font-size,28);
+  overflow: hidden;
+  color: #2E2E2E;
+  border-bottom: 1px solid #E5E5E5;
+}
+.row-left{
+  float: left;
+}
+.row-right{
+  float: right;
+  color: #979797;
+}
+.row-right-describe{
+  color: #2E2E2E !important;
+}
+.transfer-btn{
+  border: none;
+  outline: none;
+  background-color: #FF6633;
+  color: #ffffff;
+  border-radius: 6px;
+  width: 90%;
+  .px2rem(height,80);
+  .px2rem(font-size,30);
+  .px2rem(margin-top,60);
+}
+
+
+.search-transfer-view{
+  transform: translate3d(100%, 0, 0);
+  background-color: #FAFAFA;
+  height:100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  transition: all 0.3s ease;
+}
+.search-transfer-view-show{
+  transform: translate3d(0, 0, 0) !important;
+}
+.search-right{
+  width: 88%;
+  .px2rem(padding-top,15);
+  .px2rem(padding-right,30);
+}
+.search-block{
+  overflow: hidden;
+  height: 80%;
+  border-radius: 5px;
+  background-color: white;
+}
+#searchTransfer{
+  .px2rem(height,60);
+  .px2rem(line-height,60);
+  border: none;
+  .px2rem(font-size,28);
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+#transPointsInput{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: end;
+  padding-right: 5px;
+  margin-bottom: 0;
+  .px2rem(height,36);
+  .px2rem(line-height,36);
+  .px2rem(font-size,28);
+}
+.search-block-title{
+  overflow: hidden;
+  height: 80%;
+  border-radius: 5px;
+  background-color: white;
+    text-align: right;
+    line-height: 0.6rem;
+    font-size: 0.4rem;
+}

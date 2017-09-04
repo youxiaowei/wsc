@@ -1,0 +1,13 @@
+{
+  "template":"usersetting.html",
+  "type": "usersetting",
+  "components":[
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

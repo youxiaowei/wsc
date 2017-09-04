@@ -1,0 +1,15 @@
+{
+  "template": "weixinlogin.html",
+  "type":"weixinlogin",
+  "header": {
+    "title": "微信绑定",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components": [
+  ]
+}

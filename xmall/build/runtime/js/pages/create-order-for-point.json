@@ -1,0 +1,16 @@
+{
+  "template": "create-order-for-point.html",
+  "type": "create-order-for-point",
+  "components":[
+    {
+      "type": "AddressInOrderView",
+      "id": "AddressInOrderView"
+    },
+    {
+      "type": "OrderShopListView",
+      "id": "OrderShopListView",
+      "collection":"OrderShopListCollection",
+      "template":"order-product-list-item-points.html"
+    }
+  ]
+}

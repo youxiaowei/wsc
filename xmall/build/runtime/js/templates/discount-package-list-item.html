@@ -1,0 +1,46 @@
+<div class="discount-list">
+  <div class="discount-list-title" data-index="0">
+      <span class="list-title-left">优惠套餐<%=(index+1)%></span>
+      <span class="discount-amount">共<span class="discount-amount-num"><%=products.length%></span>件</span>
+      <div class="list-title-right"><span class="right-icomoon icomoon-highpull"></span></div>
+  </div>
+  <div class="discount-img-group" style="display: <% if(index == 0) {%>none <% } else {%> block <%}%>">
+      <div style="display: flex;">
+        <% for(var i = 0 ; i < products.length; i++){ %>
+         <div class="goods-group-img"><img src="<%=products[i].productImage%>"></div>
+         <% if(i < products.length -1){ %>
+          <div class="goods-plus">+</div>
+        <%
+         }
+        }
+        %>
+      </div>
+  </div>
+  <div class="discount-group group-list-active">
+      <ul>
+        <% for(var i = 0 ; i < products.length; i++){ %>
+          <li class="discount-group-li">
+            <div class="discount-goods-img"><img src="<%=products[i].productImage%>"></div>
+            <div class="discount-goods-describe">
+                <div class="goods-describe-name"><%=products[i].goodsTitle%></div>
+                <div class="goods-describe-standard"><%=products[i].goodsSpec%></div>
+                <div class="goods-describe-price">¥<%=products[i].productPrice%></div>
+                <div class="goods-describe-num">x<%=products[i].goodsNum%></div>
+            </div>
+          </li>
+        <%
+        }
+        %>
+      </ul>
+      <div style="overflow: hidden;clear: both;">
+          <div class="original-price">原价:¥<%=originalPrice%></div>
+          <div class="priceInfo-right">
+              <div class="discount-price">套餐价:<span class="price-theme-color">¥<%=packagePrice%></span></div>
+              <div class="money-saving">立省:<span class="price-theme-color">¥<%=(originalPrice-packagePrice)%></span></div>
+          </div>
+      </div>
+      <div class="buy-submit-btn">
+          <div class="buy-now-btn" data-pid="<%=packageId%>">轻松购</div>
+      </div>
+  </div>
+</div>

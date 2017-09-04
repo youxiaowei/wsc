@@ -1,0 +1,21 @@
+{
+  "type":"create-comment",
+  "template":"create-comment.html",
+  "components":[
+    {
+      "id":"CreateCommentListView",
+      "type":"CreateCommentListView",
+      "template":"create-comment-product-item.html",
+      "collection":"AjaxCollection"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+
+}

@@ -1,0 +1,24 @@
+{
+  "template":"credit.html",
+  "type": "credit",
+  "components": [
+    {
+      "type": "CreditFilter",
+      "id" : "CreditFilter"
+    },
+    {
+      "type": "ListView",
+      "id":"creditlistview",
+      "collection": "CreditCollection",
+      "template": "creditlistview.html"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+}

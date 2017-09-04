@@ -1,0 +1,27 @@
+{
+  "type": "order-detail",
+  "template": "order-detail.html",
+  "components":[
+    {
+      "type":"LogisticInfoView",
+      "id":"LogisticInfoView"
+    },
+    {
+      "type":"AddressInOrderView",
+      "id":"AddressInOrderView"
+    },
+    {
+      "type": "ListView",
+      "id": "OrderDetailListView",
+      "collection":"AjaxCollection",
+      "template":"order-detail-product-list-item.html"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+@import "common";
+.background-cover{
+	position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+	opacity: 0.4;
+	background-color: #000;
+}
+.balancePayment{
+	position: fixed;
+  top: 40%;
+  left: 15%;
+  display: inline-block;
+  .px2rem(border-radius,8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
+  z-index: 99;
+	height:4rem;
+	.px2rem(width,540);
+	background-color:#F8F8F8;
+	color: #000;
+	.balance-pay{
+		.px2rem(font-size,34);
+		.px2rem(line-height,44);
+		padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+		text-align: center;
+	}
+	.balance-num{
+		padding-bottom: 0.1rem;
+		.px2rem(font-size,34);
+		text-align: center;
+	}
+	.balance-password{
+		height:1.2rem;
+	}
+	.balance-password-text{
+		height:1rem;
+		text-align: center;
+	}
+	.balance-selector{
+		.px2rem(font-size,34);
+		.px2rem(line-height,80);
+		color: #007AFF;
+		border-top: 1px solid #ccc;
+		.balance-cancel{
+			border-right: 1px solid #ccc;
+			display: inline-block;
+			width: 50%;
+			text-align: center;
+		}
+		.balance-sure{
+			display: inline-block;
+			text-align: center;
+			width: 50%;
+		}
+	}
+}

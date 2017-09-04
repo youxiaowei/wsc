@@ -1,0 +1,44 @@
+<header class="headerbox">
+    <div class="left-right nav-left goback">
+        <span class="icomoon icomoon-back"></span>
+    </div>
+    <div class='mid order-type-selector-btn'>
+      <span class="common-title title-mid order-list-title">全部订单</span>
+      <span class="order-type-selector-icon icomoon icomoon-pulldown title-mid"></span>
+    </div>
+    <div class="left-right nav-right header-menu">
+      <span class="icomoon icomoon-moremore"></span>
+    </div>
+</header>
+<div class="order-type-selector order-type-selector-hide">
+  <div class="order-type-selector-menu">
+    <div class="order-type-selector-menu-item"><span data-name="allDay" data-index="5" class="selector-item selector-item-selected item-all-day">全部订单</span></div>
+    <div class="order-type-selector-menu-item"><span data-name="sameDay" data-index="0" class="selector-item item-order-day">当天</span></div>
+    <div class="order-type-selector-menu-item"><span data-name="sameWeek" data-index="1" class="selector-item item-order-week">一周内</span></div>
+    <div class="order-type-selector-menu-item"><span data-name="sameMonth" data-index="2" class="selector-item item-order-month">一个月内</span></div>
+    <div class="order-type-selector-menu-item"><span data-name="sameMonthAgo" data-index="3" class="selector-item item-order-monthago">一个月前</span></div>
+  </div>
+  <div class="order-type-selector-cover"></div>
+</div>
+<div class="order-list">
+  <div class="order-list-control-view">
+    <div class="segmented-control order-list-segmented">
+      <a class='control-item segmented-item segmented-item-active theme-color theme-border-color' data-index='0'>全部</a>
+      <a class='control-item segmented-item' data-index='1'>待付款</a>
+      <a class='control-item segmented-item' data-index='2'>待发货</a>
+      <a class='control-item segmented-item' data-index='3'>待收货</a>
+      <a class='control-item segmented-item' data-index='4'>已完成</a>
+      <!-- <a class='control-item segmented-item' data-index='5'>进行中</a>
+      <a class='control-item segmented-item' data-index='6'>流团</a> -->
+    </div>
+  </div>
+  <div class="order-filter-blank-top"></div>
+  
+    <component id="AllOrderListView" />
+  
+
+</div>
+<div >
+  <component id="PopupMenu"/>
+  <component id="SearchMidPageView"/>
+</div>

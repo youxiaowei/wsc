@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+  <script src="../vendor/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="../vendor/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+  <script src="../runtime/js/libs/qrcode.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  var URL_PUZZLE_HTTP = "http://puzzle.appbricks.io:4080";
+  var URL_PUZZLE_HTTPS = "https://puzzle.appbricks.io:4443";
+  var URL_CA_CER = URL_PUZZLE_HTTP + "/puzzle/ca.cer";
+
+  function install_url(archive_id, platform){
+    if (platform.indexOf('ios') != -1) {
+      return URL_PUZZLE_HTTPS + '/puzzle/archives/' + archive_id + '/install/ios';
+    } else {
+      return URL_PUZZLE_HTTPS + '/puzzle/archives/' + archive_id + '.apk';
+    }
+  }
+
+  function task_url(task_id){
+    return URL_PUZZLE_HTTP + '/puzzle/api/tasks/' + task_id;
+  }
+  // draw qrcode for installUrl and caCer
+  function drawQrCode(container, caCer, installUrl) {
+     // show the container
+     $(container).show();
+      // https证书安装 二维码
+      var httpsImgTag, httpsQr;
+      httpsQr = qrcode(8, 'M');
+      httpsQr.addData(caCer);
+      httpsQr.make();
+      httpsImgTag = $(httpsQr.createImgTag(4));
+      // insert into msg area
+      $('#ca', container).empty();
+      $('#ca', container).append(httpsImgTag);
+
+      // 应用安装 生成二维码
+      var imgTag, qr;
+      qr = qrcode(8, 'M');
+      qr.addData(installUrl);
+      qr.make();
+      imgTag = $(qr.createImgTag(4));
+      $('#ipa', container).empty();
+      $('#ipa', container).append(imgTag);
+    }
+  // submit the form via ajax and write the response to the page
+  function doSubmit() {
+    $('#qrcodeDiv').hide();
+    var data = {};
+    // gather value
+    $(':input').each(function(){
+      var key = $(this).attr('name');
+      if (key) {
+        data[key] = $(this).val();
+      }
+    });
+    if (!data.title) {
+      alert("应用名称不能为空");
+      return false;
+    }
+    // submit the form
+    if (data.platform == 'zip')
+    {
+      $('form').get(0).submit();
+      return true;
+    }
+    var action = "{{prefix}}";
+    $.ajax({
+    contentType:'application/json',
+    dataType: 'json',
+    type: 'POST',
+    url: "{{prefix}}",
+    data: JSON.stringify(data),
+    success:function(resp, textStatus, jqXHR) {
+      if (textStatus === 'success') {
+          // 延迟2000毫秒轮询
+          window.clearPoll = setInterval(poll, 2000, resp);
+      }
+    },
+    error: function(error) {
+      $('#msg').text(error);
+    }
+    });
+    return false; // disable form submiting
+  }
+  // 拉取编译结果
+  var counter = 0;
+ function poll(data) {
+  $.ajax({
+    type: "get",
+    url: task_url(data.id),
+    success: function(data2, status) {
+      if(data2.state === 'complete') {
+        clearInterval(window.clearPoll);
+        window.clearPoll = null;
+        counter = 0;
+        drawQrCode('#qrcodeDiv', URL_CA_CER, install_url(data.id, data.type));
+      } else {
+        counter++;
+      }
+      if (counter > 50) {
+        $('msg').text("build timeout");
+        // reset
+        clearInterval(window.clearPoll);
+        window.clearPoll = null;
+        counter = 0;
+      }
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log(errorThrown);
+    }
+  });
+}
+  </script>
+  <style>
+    #qrcodeDiv {
+      top:20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="msg">{{msg}}</div>
+        <form class="form-horizontal" method="POST">
+          <fieldset>
+            <div id="legend" class="">
+              <legend class="">打包</legend>
+            </div>
+            <div class="control-group">
+
+              <!-- Text input-->
+              <label class="control-label" for="input01">应用名</label>
+              <div class="controls">
+                <input name="title" type="text" placeholder="app name" class="input-xlarge">
+                <p class="help-block">please input app name</p>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <!-- Select Basic -->
+              <label class="control-label">平台</label>
+              <div class="controls">
+                <select class="input-xlarge" name="platform">
+                  <option value="zip">zip包下载</option>
+                  <option value="ios-fastbuild">iOS快速构建</option>
+                  <option value="android-fastbuild">Android快速构建</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">模式</label>
+              <div class="controls">
+                <select class="input-xlarge" name="mode">
+                  <option>debug</option>
+                  <option>production</option>
+                </select>
+              </div>
+            </div>
+            <!--
+            <div class="control-group">
+              <label class="control-label">图标</label>
+              <div class="controls">
+                <input name="icon" class="input-file" id="fileInput" type="file">
+              </div>
+            </div>
+          -->
+            <div class="control-group">
+              <label class="control-label"></label>
+              <!-- Button -->
+              <div class="controls">
+                <button class="btn btn-default" type="button" onclick="return doSubmit();">提交</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-md-6" id="qrcodeDiv">
+        <p>首次安装，请扫描下面的二维码安装根证书</p>
+        <div id="ca">
+        </div>
+        <p>扫描二维码安装软件包</p>
+        <div id="ipa">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

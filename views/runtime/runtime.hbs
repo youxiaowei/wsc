@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>{{app.name}}</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <script src="vendor/flexi-layout/flexi.js"></script>
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- weinre调试，域名要一致 -->
+    {{^app.is_production}}
+    <!-- <script src="http://bricks.yezhiming.com:8080/target/target-script-min.js#anonymous"></script> -->
+    {{/app.is_production}}
+
+    <style>
+    .spinner.rotating-plane.fix-center {
+      position: fixed;
+      top: 50%; margin-top: -15px;
+      left: 50%; margin-left: -15px;
+      background-color: #f74647;
+    }
+    </style>
+
+    <link href="vendor/slick.js/slick/slick.css" rel="stylesheet">
+    <link href="vendor/slick.js/slick/slick-theme.css" rel="stylesheet">
+
+    {{#app.is_development}}
+      <link href="runtime/css/runtime.css" rel="stylesheet">
+    {{/app.is_development}}
+    {{#app.is_production}}
+      <link href="runtime/css/runtime.min.css" rel="stylesheet">
+    {{/app.is_production}}
+
+  <!-- 两种方式： -->
+    <!-- 方式一：只请求theme.css，theme.less会编译所有的自定义less -->
+    <!-- <link href="theme.css" rel="stylesheet"> -->
+
+    <!-- 方式二：如下方式，过滤以"_"开头的less文件，剩下theme.less主入口进入相对路径css/theme.css -->
+    <!-- Note：适合appbricks平台sandbox模式开发app应用 -->
+
+    <!-- 工程CSS -->
+    {{#app.is_development}}
+        {{#each styles}}
+          <link href="css/{{this}}" rel="stylesheet">
+        {{/each}}
+    {{/app.is_development}}
+    {{#app.is_production}}
+        <link href="css/app.min.css" rel="stylesheet">
+    {{/app.is_production}}
+
+    <!-- 应用模型 -->
+    <script src="app.js"></script>
+    <script>
+    var require = {
+      //时间戳加上,防止缓存
+      urlArgs:'version=' + window.app.version,
+      waitSeconds: 15
+    }
+    </script>
+
+
+
+    <!-- 考虑到移动端，必须使用相对路径 -->
+
+    {{#app.is_development}}
+    <script src="runtime/js/require.min.js" data-main="runtime/js/bootstrap"></script>
+    {{/app.is_development}}
+    {{#app.is_debug}}
+    <script src="runtime/js/require.min.js" data-main="runtime/js/bootstrap.build"></script>
+    {{/app.is_debug}}
+    {{#app.is_production}}
+    <script src="runtime/js/require.min.js" data-main="runtime/js/bootstrap.min"></script>
+    {{/app.is_production}}
+      <script src="cordova.js"></script>
+  </head>
+  <body>
+    <!-- 添加全局loding效果：效果在runtime定义 + 位置style中定义-->
+    <!-- <div class="advertisement-pic" id="advertisement-pic"></div>
+    <div class="advertisement-countbox" id="advertisement-countbox" onclick="enterApp()">
+      <div class="advertisement-countbox-left">跳转</div>
+      <div class="advertisement-countbox-right" id="countbox-second"></div>
+    </div> -->
+    <div class="rotating-plane fix-center" id="rotating-plane"></div>
+    <div class="loading-pic"></div>
+
+    <!-- 广告页面倒计时 -->
+  <script>
+   /*function showTime(time){
+     var t = time;
+     document.getElementById('countbox-second').innerHTML= t;
+     var t =t-1;
+     if(t < 0){
+       document.getElementById('advertisement-pic').remove();
+       document.getElementById('advertisement-countbox').remove();
+       return ;
+     }
+     setTimeout('showTime('+t+')',1000);
+   }
+     showTime(3);
+   function enterApp(){
+     document.getElementById('advertisement-pic').remove();
+     document.getElementById('advertisement-countbox').remove();
+   }  */
+   </script>
+  </body>
+</html>

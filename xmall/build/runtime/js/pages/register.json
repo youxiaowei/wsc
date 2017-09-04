@@ -1,0 +1,20 @@
+{
+  "template": "register.html",
+  "type":"register",
+  "header": {
+    "title": "注册",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components": [
+  {
+      "id": "switchView",
+      "type": "SwitchView",
+      "IsOpen":false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "template": "create-order.html",
+  "type": "create-order",
+  "components":[
+    {
+      "type": "AddressInOrderView",
+      "id": "AddressInOrderView"
+    },
+    {
+      "type": "ListView",
+      "id": "CreateOrderListView",
+      "collection":"AjaxCollection0",
+      "template":"order-product-list-item.html"
+    },
+    {
+
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id" : "CouponView",
+      "type": "CouponView",
+      "collection": "CouponCollection",
+      "template": "coupon-view.html"
+    },
+    {
+      "id": "CreditCardView",
+      "type": "CreditCardView",
+      "collection": "CreditCardCollection",
+      "template" : "creditcard-view.html"
+    }
+  ]
+}

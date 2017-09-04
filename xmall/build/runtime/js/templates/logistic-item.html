@@ -1,0 +1,21 @@
+<li class="logistic-item" data-id="<%=logisId%>">
+  <div class="logistic">
+    <div class="logistic-time"><%=logisInfo[0].messageTime%></div>
+    <div class="logistic-info"><%=logisInfo[0].logisMessage%></div>
+  </div>
+    <% for(var i = 0 ; i < productInfo.length ; i++){ %>
+  <div class="logis-product">
+    <img class="logis-product-img" src="<%=productInfo[i].image%>" />
+    <div class="logis-product-content">
+      <div class="logis-prodcut-name"><%=productInfo[i].name%></div>
+      <div class="logis-product-spec-number">
+        <div class="logis-product-spc"><%=productInfo[i].specInfo%></div>
+        <div class="logis-product-number">x<%=productInfo[i].number%></div>
+      </div>
+    </div>
+  </div>
+    <% } %>
+  <div class="logis-detail" data-id="<%=logisId%>">
+    <div class="logis-detail-btn" data-id="<%=logisId%>">查看物流详情</div>
+  </div>
+</li>

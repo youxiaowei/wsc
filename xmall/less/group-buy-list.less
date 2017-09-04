@@ -1,0 +1,128 @@
+@import "common";
+.group-buy-list{
+  width:100%;
+  height:100%;
+}
+.group-buy-list-content{
+  padding-top:1.2rem;
+  width:100%;
+  height:100%;
+}
+.iframe-web{
+  width:100%;
+  height:100%;
+}
+.group-list-item{
+  width:100%;
+  background-color:#fff;
+  margin-bottom:0.2rem;
+  color:#666;
+  font-size: 0.35rem;
+  border-bottom: 1px solid #ccc;
+  .product-image{
+    width:100%;
+  }
+  .product-info{
+    width:100%;
+    padding:0.2rem;
+    .name-info{
+      color:#2e2e2e;
+    }
+    .price-percent-number{
+      overflow: hidden;
+      margin: 0.2rem 0;
+      .price-info{
+        float: left;
+        overflow: hidden;
+        .original-price{
+          text-decoration: line-through;
+          font-size: 0.3rem;
+          padding-top: 0.05rem;
+          padding-left: 0.15rem;
+          float:left;
+        }
+        .g-product-price{
+          float:left;
+        }
+      }
+      .percent-number{
+        float:right;
+      }
+    }
+    .progress-info{
+      overflow:hidden;
+      width:100%;
+      .progress-des{
+        float:left;
+        width:10%;
+      }
+      .progress-des-cf{
+        float:left;
+        width:20%;
+      }
+      .progress-bar-cf{
+        float:left;
+        width:68%;
+        position: relative;
+        margin-bottom:0.2rem;
+        top: 0.1rem;
+        .progress-default{
+          position: absolute;
+          width:100%;
+          height:0.2rem;
+          background-color: #eee;
+          border-radius: 0.2rem;
+        }
+        .progress-current{
+          position: absolute;
+          height:0.2rem;
+          background-color: #ff6633;
+          border-radius: 0.2rem;
+        }
+      }
+      .progress-bar{
+        float:left;
+        width:80%;
+        position: relative;
+        margin-bottom:0.2rem;
+        top: 0.1rem;
+        .progress-default{
+          position: absolute;
+          width:100%;
+          height:0.2rem;
+          background-color: #eee;
+          border-radius: 0.2rem;
+        }
+        .progress-current{
+          position: absolute;
+          height:0.2rem;
+          background-color: #ff6633;
+          border-radius: 0.2rem;
+        }
+      }
+      .progress-percent{
+        float:right;
+      }
+    }
+    .time-btn{
+      width:100%;
+      overflow: hidden;
+      margin-top: 0.2rem;
+      .timer{
+        float:left;
+        padding-top:0.3rem;
+      }
+      .btn-operation{
+        float:right;
+        background-color:#ff6633;
+        color:#fff;
+        padding:0.2rem 0.4rem;
+        border-radius: 0.1rem;
+      }
+      .btn-operation:active{
+        background-color:#ccc;
+      }
+    }
+  }
+
+}

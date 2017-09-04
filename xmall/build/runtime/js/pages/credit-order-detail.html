@@ -1,0 +1,69 @@
+<header class="headerbox" >
+  <div class="left-right nav-left goback">
+      <span class="icomoon icomoon-back"></span>
+  </div>
+  <div class='mid'>
+    <span class="common-title">订单详情</span>
+  </div>
+  <div class="left-right nav-right header-menu">
+    <span class="icomoon icomoon-moremore"></span>
+  </div>
+</header>
+<div class="order-detail">
+ <div class="order-detail-success-time">交易成功！</div>
+ <!-- 团购众筹订单的提示 -->
+ <div style='display:none' class="order-detail-success-group-cf"> 交易成功！</div>
+ <component id="LogisticInfoView" />
+ <component id="AddressInOrderView" />
+ <div class="shop-info">
+   <component id="OrderDetailListView"/>
+   <div class="order-fee">
+     <div class="order-delivery-fee">
+       <span class="order-delivery-fee-des">运费</span>
+       <span class="order-delivery-fee-fee"><span class="fee-unit">¥</span><span class="order-delivery-fee-number">0</span>
+     </div>
+     <div class="order-product-fee">
+       <span class="order-product-fee-des">所需积分</span>
+       <span class="order-product-fee-fee"><span class="fee-unit"></span><span class="order-product-fee-number">0</span>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="pay-send-selector">
+   <div class="pay-method psb-selector">
+     <span class="pay-method-des psb-selector-des">支付方式</span>
+     <span class="detail-pay-method-value psb-selector-value-order-detail"></span>
+   </div>
+   <div class="send-method psb-selector">
+     <span class="send-method-des psb-selector-des">配送方式</span>
+     <span class="detail-send-method-value psb-selector-value-order-detail"></span>
+   </div>
+   <div class="bill-order-info psb-selector">
+     <span class="bill-method-des psb-selector-des">发票信息</span>
+     <div class="bill-method-value psb-selector-value"></div>
+   </div>
+ </div>
+
+ <div class="order-detail-info">
+   <div class="order-info-info">
+     <span class="order-info-des">订单编号：</span>
+     <span class="order-code-value"></span>
+   </div>
+   <div class="order-info-info order-create-time-sub">
+     <span class="order-info-des">创建时间：</span>
+     <span class="create-order-time"></span>
+   </div>
+ </div>
+
+</div>
+	<div class="order-bottom-bar">
+      <%if(application.getQueryString( "orderStatus") ==3){ %>
+          <a class="order-btm-bar-cell order-operation1 theme-color">确认收货</a>
+      <% }%>
+	  
+	</div>
+<div >
+  <component id="PopupMenu"/>
+  <component id="SearchMidPageView"/>
+</div>

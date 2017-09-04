@@ -1,0 +1,14 @@
+{
+  "type":"message-detail",
+  "template":"message-detail.html",
+  "components":[
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

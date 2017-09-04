@@ -1,0 +1,78 @@
+@import "common";
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-center {
+  position: fixed;
+  top: 40%;
+  width: 30%;
+  left: 35%;
+  text-align: center;
+  background-color: rgba(0,0,0,.7);
+  padding: 0.5rem;
+  z-index: 999;
+  border-radius: 8px;
+    
+  .loading-bar {
+    margin: 0 auto;
+    font-size:0.5rem;
+    animation: loading 1s linear infinite;
+    width: 0.5rem;
+    height: 0.5rem;
+        animation: loading 1s linear infinite;
+        border-radius: 100%;
+        overflow: hidden;
+        background: url(../images/home/loading-icon-weight.png) no-repeat center center;
+        background-size: contain;
+  }
+  .loading-message{
+    color:#fff;
+    font-size:0.4rem;
+    margin-top:0.2rem;
+  }
+}
+.loadmore{
+  width:100%;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.3rem 0;
+  color: #555;
+
+}
+.loadmore-loading{
+  width:100%;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  padding: 0.3rem 0;
+  color: #555;
+  text-align: center;
+    clear: both;
+  .label{
+    position: relative;
+    top:-0.09rem;
+    left:0.2rem
+  }
+}
+.loadmore-loading:active{
+  background-color:#eee;
+}
+.listview-loadingbar{
+  margin: 0 auto;
+  font-size:0.5rem;
+  animation: loading 1s linear infinite;
+  width: 0.5rem;
+  height: 0.5rem;
+  display:inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+    background: url(../images/home/loading-icon.png) no-repeat center center;
+    background-size: contain;
+}

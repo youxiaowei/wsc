@@ -1,0 +1,42 @@
+<div class="customerservice-item">
+    <div class="customerservice-goods-details">
+     <div class="goods-details-aid">订单号：<span ><%=ORDERSN %></span></span></div>
+     <div id="imgDetail" style="display:none"><%=goodsImage%></div>
+     <div style="display:none"><span id="saleDetail" ><%=AID %></span></span></div>
+     
+        <div class="goods-details-img">
+            <img src="<%=goodsImage%>" alt="" />
+        </div>
+        <div class="goods-details-content">
+            <div class="goods-details-title">
+                <%=GOODSNAME%>
+            </div>
+            <div class="goods-detail-mid">
+                <div class="goods-details-spec" style="color:red">
+                                                   ￥ <%=goodsSalePrice %>
+                </div>
+            </div>
+            
+             <div class="goods-details-price">
+                <div class="goods-details-unit-price theme-color">
+                     <% if(STATE == '0') { %>
+                        <span>初始态</span>
+                    <% } else if(STATE == '3'){ %>
+                        <span>驳回</span>
+                    <% } else if(STATE == '1'){ %>
+                        <span>审核未通过</span>
+                    <% } else if(STATE == '2'){ %>
+                        <span>审核通过</span>
+                    <% } else if(STATE == '4'){ %>
+                        <span>已完成</span>
+                    <% } else if(STATE == '6'){ %>
+                        <span>退换货处理中</span>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+</div>

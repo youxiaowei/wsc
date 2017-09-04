@@ -1,0 +1,161 @@
+<div id="goods-page">
+  <header class="headerbox goods-label-return-nav">
+    <div class="left-right nav-left goback">
+      <span class="icomoon icomoon-back"></span>
+    </div>
+    <div class='mid'>
+      <span class="common-title">商品详情</span>
+    </div>
+    <div class="left-right nav-right header-menu">
+      <span class="icomoon icomoon-moremore"></span>
+    </div>
+  </header>
+  <div class="goods-label-return" >
+    <div class="icomoon-back goods-label-back"></div>
+  </div>
+  <div class="goods-label-menu" >
+    <div class="icomoon icomoon-moremore goods-label-menu-menu"></div>
+  </div>
+  <div style='position:relative'>
+  <div class='itemdetial-top'>
+  <component id="carousel"/>
+  </div>
+  <div class="tips-without-cover"></div>
+  <div class="goods-label" style=" overflow: hidden;">
+    <div class="goods-label-title">
+      <div class="goods-title-name">
+      </div>
+      <!-- <div class="goods-title-share">
+        <div class="icomoon-share goods-share">
+        </div>
+        <div class="goods-title-collection-name">
+          分享
+        </div>
+      </div> -->
+      <div class="goods-title-money">
+        <div class="goods-title-rmb">¥</div>
+        <div class="goods-title-num"></div>
+        <div class="goods-title-box theme-backgorund-color"></div>
+      </div>
+      <div class="goods-sale-infomation">
+        <!-- <div class="express-fee"><span>快递 </span><span>6元</span></div> -->
+        <div class="month-sale"><span>月销 </span><span class='month-sale-val'>6件</span></div>
+      </div>
+    </div>
+    <div class="goods-label-spec">
+      <div class="goods-spec-box">
+        <div class="goods-spec-name">
+          选择 商品规格
+        </div>
+        <div class="goods-spec-selected"></div>
+      </div>
+      <div class="goods-spec-select icomoon-details">
+      </div>
+    </div>
+    <div class="goods-label-coupon">
+      <div class="goods-coupon-title">
+          <span>优惠&nbsp;&nbsp;可享受以下优惠</span>
+          <span class="icomoon icomoon-highpull launch-ico coupon-launch-ico"></span>
+      </div>
+      <div class="goods-coupon-detail coupon-detail-show">
+          <div class="coupon-row" style="display:none"><span class="coupon-tag">满减</span><span class="itemdetail-discount">无</span></div>
+          <div class="coupon-row" style="display:none"><span class="coupon-tag">送积分</span><span class="itemdetail-points">无</span></div>
+          <div class="coupon-row-last coupon-packages">
+              <span class="coupon-tag">优惠套餐</span>
+              <span class='coupon-desc'></span>
+              <span class="icomoon icomoon-details launch-ico"></span>
+          </div>
+          <div class="packages-details">
+              <div class="flex-layout packages-details-row">
+              </div>
+          </div>
+      </div>
+      <!-- <div class="goods-service"><span>服务</span><span class="goods-service-info">7天无理由退货</span></div> -->
+    </div>
+
+    <div class="goods-label-evaluate">
+      <div class="goods-evaluate-title">
+        <div class="goods-evaluate-number">
+          商品评价(<span class="goods-comments-number"></span>)
+        </div>
+      </div>
+      <div class="goods-evaluate-filter">
+        <div id="all-evaluate" data-index="0" class="evaluate-tab evaluate-tab-active">全部(<span id="allComNum"></span>)</div>
+        <div id="good-evaluate" data-index="1" class="evaluate-tab">很好(<span id="goodComNum"></span>)</div>
+        <div id="normal-evaluate" data-index="2" class="evaluate-tab">一般(<span id="comComNum"></span>)</div>
+        <div id="bad-evaluate" data-index="3" class="evaluate-tab">较差(<span id="badComNum"></span>)</div>
+      </div>
+      <div class="goods-evaluate-list">
+        <ul class="goods-evaluate-ul">
+        </ul>
+        <div class="no-comment" style="text-align: center;margin-top: 20px;width: inherit;height: 50px;color: #b1b1b1;">暂无评价</div>
+      </div>
+      <div class="more-comment"><span style="vertical-align: middle;">查看更多评论</span><span class="icomoon icomoon-details comment-ico"></span></div>
+    </div>
+    <div class="goods-label-collection">
+      <span class="goods-collection-words">点击查看图文详情</span><span class="goods-collection-icon icomoon-spread"></span>
+    </div>
+    <component id="ProductBottomBarView"/>
+  </div>
+</div>
+</div>
+
+<div class="add-shop-cart yyfixed">
+  <div class="shop-cart-info">
+    <div class="shopcart-info-title">
+      <img class="info-title-img" src="//img.alicdn.com/bao/uploaded/i3/TB1sIZ1JFXXXXcfXXXXXXXXXXXX_!!0-item_pic.jpg_480x480q50.jpg" alt="" />
+      <div class="info-title-words">
+        <div class="info-title-words-collection">
+        </div>
+        <span class="info-title-words-rmb">
+          ¥
+        </span>
+        <span class="info-title-words-num">
+        </span>
+      </div>
+      <div class="info-title-svg icomoon-close"></div>
+    </div>
+    <div class="shopcart-info-spec">
+
+    </div>
+    <div class="shopcart-info-number">
+      <div class="info-number-title">
+        数量 
+      </div>
+      <div class="info-number-tips">
+      </div>
+      <div class="mui-number">
+        <button type="button" class="mui-numbox-btn-minus icomoon icomoon-minus"></button>
+        <input class="mui-numbox-input" type="tel" value="1" min="1" max="10000"/>
+        <button type="button" class="mui-numbox-btn-plus icomoon icomoon-plus"></button>
+      </div>
+    </div>
+    <div class="shopcart-info-btn theme-backgorund-color">
+      确定
+    </div>
+  </div>
+</div>
+
+<div >
+  <component id="ShareView" />
+</div>
+
+<div class="business-category-view-more">
+  <component id="business-category" />
+</div>
+
+<div class="goods-collection-info">
+    <div class="backToGoods">
+        <span class="icomoon-back"></span>
+    </div>
+    <div id="topBlank"></div>
+    <component id="MySegmentedView"/>
+</div>
+
+<div class="bigImg-view yyfixed">
+    <component id="carousel1" class="carouselImg"/>
+</div>
+<div>
+    <component id="PopupMenu"/>
+    <component id="SearchMidPageView"/>
+</div>

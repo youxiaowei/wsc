@@ -1,0 +1,14 @@
+{
+  "type":"logistic-list",
+  "template": "logistic-list.html",
+  "components":[
+    {
+      "type": "ListView",
+      "id": "LogisticListView",
+      "template": "logistic-item.html",
+      "autoload": false,
+      "collection": "AjaxCollection"
+    }
+
+  ]
+}

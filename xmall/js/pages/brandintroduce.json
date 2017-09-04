@@ -1,0 +1,13 @@
+{
+	"template": "brandintroduce.html",
+	"type": "brandintroduce",
+    "header": {
+      "title": " ",
+      "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+      }]
+    }
+}

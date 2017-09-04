@@ -1,0 +1,40 @@
+{
+  "template": "pointitemdetail.html",
+  "type": "pointitemdetail",
+  "components": [{
+      "id": "carousel1",
+      "type": "CarouselView",
+      "slickOptions": {
+        "lazyLoad": "progressive",
+        "dots": true,
+        "autoplay": false,
+        "swipeToSlide": true,
+        "speed": 300,
+        "arrows": false
+      },
+      "collection": "itemDetailCollection"
+    },{
+      "id": "carousel",
+      "type": "CarouselView",
+      "slickOptions": {
+        "lazyLoad": "progressive",
+        "dots": true,
+        "autoplay": true,
+        "swipeToSlide": true,
+        "speed": 300,
+        "arrows": false
+      },
+      "collection": "itemDetailCollection"
+    }, {
+       "type": "ProductBottomBarView",
+       "id": "ProductBottomBarView",
+       "collection": "ShoppingcartnumCollection"
+    },{
+        "id": "SearchMidPageView",
+        "type": "SearchMidPageView"
+    },{
+        "id": "PopupMenu",
+        "type": "PopupMenu"
+      }
+  ]
+}

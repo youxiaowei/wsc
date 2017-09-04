@@ -1,0 +1,108 @@
+<div><component id='SearchMidPageView'/></div>
+<header class='common-search' id='home_header'>
+    <div class="common-search-left common-search-left-home">
+        <div class="common-search-left-inner">
+          <span class='icomoon-search'></span>
+          <input type='text' readonly='true' placeholder='请输入商品'/>
+        </div>
+    </div>
+    <div class="common-search-right common-search-right-home">
+      <span class='icomoon-scan'></span>
+      <span class='home-scan-title'>扫一扫</span>
+    </div>
+    <div class='home-header-bk' id='home_header_bk'>
+    </div>
+</header>
+<div id="home-body">
+    <div class="home-carousel"><component id="carousel"/></div>
+    <div class="home-floor">
+      <div class="recommend">
+        <div class="home-brand home-seckill">
+          <div class="home-brand-title">
+            <div class="home-head">
+              <div class="home-words">
+                掌上秒杀
+              </div>
+            </div>
+            <component id="HomeSeckillTimerView" />
+            <div class="home-change">
+              <a href="#brand">
+              <span class="home-change-details-words">
+                更多
+              </span>
+              <span class="home-change-details icomoon-details">
+              </span>
+            </a>
+            </div>
+          </div>
+          <component id="HomeSeckillView" />
+        </div>
+        <div class="home-topic">
+          <div class="home-title">
+            <div class="home-head">
+              <div class="home-words">
+                热门活动
+              </div>
+            </div>
+            <div change-type="activities" class="home-goods-change">
+              <span class="home-change-icon icomoon-next"></span>
+              <span class="home-change-words">换一批</span>
+            </div>
+          </div>
+          <component id="HomeTopicView" />
+        </div>
+        <div class="home-goods">
+          <div class="home-title">
+            <div class="home-head">
+              <div class="home-words">
+                精品推荐
+              </div>
+            </div>
+            <div change-type="recommand" class="home-goods-change">
+              <span class="home-change-icon icomoon-next"></span>
+              <span class="home-change-words">换一批</span>
+            </div>
+          </div>
+          <component id="HomePushView" />
+          <component id='HomePushViewLoading'/>
+        </div>
+        <div class="home-brand">
+          <div class="home-brand-title">
+            <div class="home-head">
+              <div class="home-words">
+                品牌街
+              </div>
+            </div>
+            <div class="home-change">
+              <a href="#brand">
+              <span class="home-change-details-words">
+                更多
+              </span>
+              <span class="home-change-details icomoon-details">
+              </span>
+            </a>
+            </div>
+          </div>
+          <component id="HomePushBrandView" />
+          <component id='HomePushBrandViewLoading'/>
+        </div>
+        <div class="home-shop">
+          <div class="home-shop-title">
+            <div class="home-head">
+              <div class="home-words">
+                优选店铺
+              </div>
+            </div>
+            <div change-type="shop"class="home-shop-change">
+              <span class="home-change-icon icomoon-next"></span>
+              <span class="home-change-words">换一批</span>
+            </div>
+          </div>
+          <div class="home-excellent-shop">
+            <component id="HomePushShopView" />
+            <component id='HomePushShopViewLoading'/>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

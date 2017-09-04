@@ -1,0 +1,21 @@
+{
+  "template":"details.html",
+  "type":"details",
+  "header": {
+    "title": "店铺详情",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components": [
+    {
+      "type": "Detailslist",
+      "id" : "Detailslist"
+    }
+
+  ]
+
+}

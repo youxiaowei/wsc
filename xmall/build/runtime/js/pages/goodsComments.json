@@ -1,0 +1,17 @@
+{
+  "template": "goodsComments.html",
+  "type":"goodsComments",
+  "components": [
+    {
+      "id":"CommentListView",
+      "type":"ListView",
+      "collection":"AjaxCollection",
+      "template":"goodsCommentsListView.html"
+    },
+    {
+      "type": "ProductBottomBarView",
+      "id":"ProductBottomBarView",
+      "collection":"ShoppingcartnumCollection"
+    }
+  ]
+}

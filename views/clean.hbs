@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+  <script src="../vendor/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    function onDiff(){
+      console.log("submit");
+      $.ajax({
+      contentType:'application/json',
+      dataType: 'json',
+      type: 'POST',
+      url: "{{prefix}}",
+      data: {},
+      success:function(resp, textStatus, jqXHR) {
+        if(!resp) return;
+        console.log(resp);
+        addComp(resp.components);
+        addTemp(resp.templates);
+
+      },
+      error: function(error) {
+        console.log(error);
+      }
+      });
+    }
+
+    function addComp(components){
+      if(components){
+        var table = $("<table></table>");
+        var th = $("<th></tb>");
+        th.text("可能没用到的js组件("+components.length+")");
+        table.append(th);
+        for(i in components){
+          var tr = $("<tr></tr>");
+          var td = $("<td></td>");
+          td.text(components[i]);
+          tr.append(td);
+          table.append(tr);
+        }
+        $(".components").empty().append(table);
+      }
+    }
+    function addTemp(templates){
+      if(templates){
+        var table = $("<table></table>");
+        var th = $("<th></tb>");
+        th.text("可能没用到的模板("+templates.length+")");
+        table.append(th);
+        for(i in templates){
+          var tr = $("<tr></tr>");
+          var td = $("<td></td>");
+          td.text(templates[i]);
+          tr.append(td);
+          table.append(tr);
+        }
+        $(".templates").empty().append(table);
+      }
+    }
+  </script>
+  <style>
+    table{
+      width:100%;
+      font-size:20px;
+    }
+    tr{
+      text-align: center;
+      border: 1px solid #eee;
+    }
+    th{
+      font-weight: bolder;
+      border: 1px solid #ccc;
+    }
+    .operation{
+      width:100%;
+      text-align: center;
+      margin:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="operation">
+    <button class="btn btn-default" type="button" onclick="return onDiff();">diff 一下 </button>
+  </div>
+  <div class="container">
+    <div class="components"></div>
+    <div class="templates"></div>
+
+  </div>
+</body>
+</html>

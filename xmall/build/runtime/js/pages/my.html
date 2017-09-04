@@ -1,0 +1,207 @@
+<header class="headerbox">
+  <div class="left-right nav-left my-header-left">
+    <span class="icomoon icomoon-setting"></span>
+  </div>
+  <div class='mid'>
+    <span class="common-title">我的</span>
+  </div>
+  <div class="left-right nav-right my-header-right">
+    <span class="icomoon icomoon-talk "></span>
+  </div>
+</header>
+<div class="my-page-view">
+  <div class="person-panel">
+    <div id='my-wdl'>
+      <div class="person-header">
+          <img class="head-image" src="./images/login/person_head.png" />
+      </div>
+      <div class="person-name">
+          <label class="person-name-l">点击登录</label>
+      </div>
+    </div>
+    <div id='my-ydl' class='ydl-hide'>
+        <img id='my-tx' class="head-image" src="./images/login/person_head.png" />
+        <div class='my-ydl-detail'>
+          <div id='my-name'></div>
+          <div class='my-huiyuan'>会员</div>
+        </div>
+        <div class="my-address-manager">管理收货地址</div>
+        <span class="icomoon-details my-address-detail"></span>
+    </div>
+    <div class="table-panel my-collection">
+        <div class="person-ps-left">
+          <a >
+            <div class="person-number">0</div>
+            <div class="person-p">收藏的商品</div>
+          </a>
+        </div>
+        <div class="person-ps-right">
+            <a >
+            <div class="person-number history-num">0</div>
+            <div class="person-p">我的物流</div>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="my-item-cell all-order">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-indent"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+        我的订单
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name">查看所有订单</div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+  </div>
+  <div class="table-panel wait-table">
+      <div class="wait-ps" id="wait-pay">
+        <a >  
+              <div class="circle-count circle-pay">
+                <span class="wait-pay-count">0</span>
+              </div>
+              <div class="wait-icon icomoon-arrearage"></div>
+              <div class="wait-p">待付款</div>
+          </a>
+      </div>
+
+      <div class="wait-ps" id="wait-send">
+        <a >
+          <div class="circle-count circle-send">
+                <span class="wait-send-count">0</span>
+          </div>
+          <div class="wait-icon icomoon-wait"></div>
+          <div class="wait-p">待发货</div>
+        </a>
+      </div>
+      <div class="wait-ps" id="wait-accept">
+        <a >
+          <div class="circle-count circle-accept">
+                <span class="wait-accept-count">0</span>
+          </div>
+          <div class="wait-icon icomoon-receipt"></div>
+          <div class="wait-p">待收货</div>
+        </a>
+      </div>
+      <div class="wait-ps" id="wait-comment">
+        <a >
+          <div class="circle-count circle-finish">
+                <span class="finish-count">0</span>
+          </div>
+          <div class="wait-icon icomoon-comment"></div>
+          <div class="wait-p">已完成</div>
+        </a>
+      </div>
+  </div>
+
+
+  <div class="my-item-cell block-margin my-memberorders">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-balance"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+        会员订单
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+    <span class='item-cell-value' id='lb_memberorders'></span>
+  </div>
+     <div class="my-item-cell my-credit-list">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-balance"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+       积分兑换记录
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+  </div>
+       <div class="my-item-cell my-package-list">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-balance"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+      套餐订单
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+  </div>
+  <div class="my-item-cell my-credit">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-integral"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+        积分商城
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+    <span class='item-cell-value' id='lb_credit'></span>
+  </div>
+  <!-- <div class="my-item-cell my-balance">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-balance"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+        余额
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+    <span class='item-cell-value' id='lb_balance'></span>
+  </div> -->
+ 
+  
+  <div class="my-item-cell my-coupon my-border-bottom">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-couple"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+        优惠券
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+    <span class='item-cell-value' id='lb_couple'></span>
+  </div>
+ 
+  
+  <div class="service-comment my-item-cell block-margin">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-service">
+       <span class="path1"></span><span class="path2"></span>
+      </div>
+      <div class="cell-left-name">
+        服务评价
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+  </div>
+
+  <div class="my-item-cell my-customerservice my-border-bottom">
+    <div class="item-cell-left">
+      <div class="cell-left-icon icomoon-aftersale"><span class="path1"></span><span class="path2"></span></div>
+      <div class="cell-left-name">
+        我的售后
+      </div>
+    </div>
+    <div class="item-cell-right">
+      <div class="item-right-name"></div>
+      <div class="item-right-icon icomoon-details"></div>
+    </div>
+  </div>
+  <div style='height:2rem'></div>
+</div>

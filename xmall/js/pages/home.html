@@ -1,0 +1,49 @@
+<div id="home-body">
+  <div>
+    <component id='SearchMidPageView' />
+  </div>
+  <header class='common-search' id='home_header'>
+    <div class="common-search-left common-search-icon">
+      <span class='icomoon-logo'></span>
+    </div>
+    <div class="common-search-mid">
+      <div class="common-search-left-inner">
+        <span class='icomoon-search'></span>
+        <input type='text' readonly='true' placeholder='查找商品' />
+      </div>
+    </div>
+    <div class="common-search-right common-search-icon">
+      <span class='icomoon-talk'></span>
+      <span class='home-scan-title'>消息</span>
+    </div>
+    <div class='home-header-bk theme-backgorund-color' id='home_header_bk'>
+    </div>
+  </header>
+  <img class="home-header-bg" src="./images/home/home_title_bg.png" />
+  <div class="home-carousel">
+    <component id="carousel" />
+  </div>
+  <div class="home-group-buying home-active">
+    <div class="group-buying-label  home-active-label">套餐商品</div>
+        
+   </div>
+ <div class="home-carousel-package">
+    <component id="packagecarousel" />
+  </div>
+
+  <div class="home-floor">
+    <div class="recommend">
+
+      <div class="home-goods">
+        <div class="home-title ">
+          <div class="home-words">
+            商品展示
+          </div>
+        </div>
+        <component id="HomePushView" />
+        <component id='HomePushViewLoading' />
+        <div class="home-bottom-padding"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+{
+  "template":"logiticsDetail.html",
+	"type": "logiticsDetail",
+    "header": {
+      "title": "物流中心",
+      "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+      },{
+      "type": "link",
+      "icon": "header-icon-menu icomoon-moremore",
+      "pull": "right",
+      "event": "menuMore"
+      }]
+    },
+    "components" : [
+    {
+      "type": "LogiticListView",
+      "id" : "LogiticListView",
+      "template": "logiticsdetail.html",
+      "collection": "logiticsCollection"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }]
+}

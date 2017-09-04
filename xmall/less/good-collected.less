@@ -1,0 +1,71 @@
+@import "common";
+.position-top-blank {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  .collector-edit {
+    .px2rem(font-size,30);
+  }
+  .top-good-filter {
+    .px2rem(height,180);
+    padding-top: 1.2rem;
+    .px2rem(font-size,28);
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    color: #2e2e2e;
+    .filters-item {
+      display: inline-block;
+      .px2rem(padding-top,31);
+      .px2rem(padding-bottom,31);
+      width: 33.333%;
+      text-align: center;
+    }
+  }
+}
+
+.goodCollected-view{
+	height: 100%;
+  width: 100%;
+  padding-top:1.2rem;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.good-collected-bottom{
+    display: none;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	color: #666666;
+	border-top: 1px solid #ddd;
+	.px2rem(height,90);
+	.px2rem(line-height,90);
+	.px2rem(font-size,24);
+	width: 100%;
+    z-index: 10;
+	.good-collected-checkbox{
+		position: relative;
+		.px2rem(top,8);
+		.px2rem(padding,10);
+		.px2rem(font-size,37);
+		.px2rem(padding-left,20);
+	}
+	.good-collected-button{
+		.px2rem(width,240);
+		.px2rem(font-size,28);
+		color: white;
+		float: right;
+		text-align: center;
+		display: inline-block;
+	}
+	.span_box{
+		float: right;
+		text-align: right;
+		.right-span-before{
+
+		}
+		.right-span-last{
+			.px2rem(padding-right,10);
+		}
+	}
+}

@@ -1,0 +1,99 @@
+<li class="all-order-list-item" data-index="<%=parentSn%>">
+    <div class="list-item-line"></div>
+    <div class="shop-info-order shop-item-header">
+        <span class="icomoon icomoon-store order-icomoon-store"></span>
+        <div class="shop-info-name-shopname">三主粮</div>
+        <% if(orderStatus == "4" || orderStatus == "5" || orderStatus == "6" || orderStatus == "7") {%>
+            <span class="shop-order-delete theme-color icomoon icomoon-delete" data-name="cancelOrder">
+            </span>
+        <% } %>
+    </div>
+    <%
+        var isComment = '0';
+        productList.forEach(function(item,index){
+            if(item.isComment == '1') isComment = '1';
+    %>
+    <div class="order-goods-details-listitem">
+        <div class="goods-details-img">
+            <img src="<%=item.productImage%>" alt="" />
+        </div>
+        <div class="order-goods-details-content">
+            <div class="order-goods-details-title">
+                <%=item.productName%>
+            </div>
+            <div class="order-goods-detail-mid">
+                <div class="order-goods-details-spec">
+                    <%=item.specInfo%>
+                </div>
+                <div class="order-goods-details-order-status theme-backgorund-color">
+                   
+                 <!--    <% if(orderStatus == '2') { %>
+                        <span>待付款</span>
+                    <% } else if(orderStatus == '3'){ %>
+                        <span>待发货</span>
+                    <% } else if(orderStatus == '1'){ %>
+                        <span>已取消</span>
+                    <% } else if(orderStatus == '4'){ %>
+                        <span>待收货</span>
+                    <% } else if(orderStatus == '5'){ %>
+                        <span>已完成</span>
+                    <% } else if(orderStatus == '6'){ %>
+                        <span>已申请取消</span>
+                    <% } %> -->
+                    
+                    <span><%= describe %></span>
+                </div>
+            </div>
+            <!-- <div class="order-goods-details-type theme-backgorund-color">
+            <% if(item.type == '0'){ %> 大宗交易 <% }else{ %>小额批发<% } %>
+            </div> -->
+            <div class="order-goods-details-price">
+                <div class="order-goods-details-unit-price theme-color">
+                 <% if(orderFee){ %>
+                    ¥<%=orderFee%>
+                 <% }else{ %>
+                    ¥<%=parentAmont%>
+                 <% } %>   
+                </div>
+                <div class="order-goods-details-number">
+                    x<%=item.number%>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+    <% if(orderStatus == '2') { %>
+        <div class="shop-info-order fee-info shop-item-foot shop-item-foot-btn-cell">
+            <span class="btn-order order-pay theme-color theme-border-color pull-right" data-name="payOrder">立即支付</span>
+            <span class="btn-order order-cancel theme-color theme-border-color pull-right" data-name="cancelOrder">取消订单</span>
+        </div>
+    <% } else if(orderStatus == '3') { %>
+       
+        <div class="shop-info-order fee-info shop-item-foot shop-item-foot-btn-cell">
+            <span class="btn-order order-recieve theme-color theme-border-color pull-right" data-name="tuihuo">申请退款</span>
+        </div>
+        
+    <% } else if(orderStatus == '4') { %>
+        <div class="shop-info-order fee-info shop-item-foot shop-item-foot-btn-cell">
+            <span class="btn-order order-recieve theme-color theme-border-color pull-right" data-name="checkLog">查看物流</span>
+            <span class="btn-order order-recieve theme-color theme-border-color pull-right" data-name="ensureOrder">确认收货</span>
+            <!--
+            <span class="btn-order order-recieve theme-color theme-border-color pull-right" data-name="shouhou">申请售后</span>
+            -->
+        </div>
+    <% } else if(orderStatus == '5') { %>
+        <div class="shop-info-order fee-info shop-item-foot shop-item-foot-btn-cell">
+            <% if(isComment == '1') { %>
+                <span class="btn-order comment-add theme-color theme-border-color pull-right" data-name="addComment">评价</span>
+            <% } %>
+            <!--
+            <span class="btn-order order-recieve theme-color theme-border-color pull-right" data-name="shouhou">申请售后</span>
+        	-->
+        </div>
+    <% } else if(orderStatus == '6'){ %>
+         <div class="shop-info-order fee-info shop-item-foot shop-item-foot-btn-cell">
+            <span class="btn-order comment-add theme-color theme-border-color pull-right" data-name="buyAgain">再次购买</span>
+            <span class="btn-order order-recieve pull-right" style="border:#ccc 1px solid;" data-name="tuihuo">退款处理中</span>
+        </div>
+    <%}%>
+</li>

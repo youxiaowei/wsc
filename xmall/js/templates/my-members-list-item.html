@@ -1,0 +1,31 @@
+<div class="member-order-list">
+    <div class="order-list-head">
+        <div class="order-list-type theme-color"><%= orderSource %></div>
+        <div class="order-list-number"><%= orderId %></div>
+        <!--
+        <div class="order-status theme-label"></div>
+        -->
+    </div>
+    <% for( i = 0; i < goodsList.length; i ++ ){ %>
+        <div class="order-list-item">
+            <div class="list-item-name">
+              <%= goodsList[i].goodsName %>
+            </div>
+            <div class="list-item-count">
+                <span class="item-measurement-unit">计量单位：<%= goodsList[i].goodsUnit %></span>
+                <span class="item-count-number">x1</span>
+            </div>
+            <div class="list-item-bottom">
+                <div class="item-label-group">
+                    <% for( j = 0; j < goodsList[i].goodsDesc.length ; j++){  %>
+                        <span class="theme-label"><%= goodsList[i].goodsDesc[j] %></span>
+                    <% } %>
+                </div>
+                <div class="item-payment-total">
+                    <span>实付款:</span>
+                    <span class="theme-color payment-total-num">¥<%= goodsList[i].goodsPrice %></span>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>

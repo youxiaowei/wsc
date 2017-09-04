@@ -1,0 +1,23 @@
+{
+  "template": "crowdfunding-detail.html",
+  "type": "crowdfunding-detail",
+  "components": [{
+    "id": "carousel",
+    "type": "CarouselView",
+    "slickOptions": {
+      "lazyLoad": "progressive",
+      "dots": true,
+      "autoplay": true,
+      "swipeToSlide": true,
+      "speed": 300,
+      "arrows": false
+    },
+    "collection": "itemDetailCollection"
+  }, {
+    "id": "PopupMenu",
+    "type": "PopupMenu"
+  }, {
+    "id": "SearchMidPageView",
+    "type": "SearchMidPageView"
+  }]
+}

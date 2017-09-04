@@ -1,0 +1,18 @@
+{
+    "template": "myMembersOrders.html",
+    "type": "myMembersOrders",
+    "components": [
+        {
+            "type": "myMembersOrderList",
+            "id": "myMembersOrderList",
+            "collection": "myOrderListCollection",
+            "template": "my-members-list-item.html",
+            "paging": true,
+            "autoload": false
+        },
+        {
+            "id": "PopupMenu",
+            "type": "PopupMenu"
+        }
+    ]
+}

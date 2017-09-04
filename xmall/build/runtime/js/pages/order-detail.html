@@ -1,0 +1,89 @@
+<header class="headerbox" >
+  <div class="left-right nav-left goback">
+      <span class="icomoon icomoon-back"></span>
+  </div>
+  <div class='mid'>
+    <span class="common-title">订单详情</span>
+  </div>
+  <div class="left-right nav-right header-menu">
+    <span class="icomoon icomoon-moremore"></span>
+  </div>
+</header>
+<div class="order-detail" style="display: block;">
+ <div class="order-detail-success-time"></div>
+ <!-- 团购众筹订单的提示 -->
+ <div style='display:none' class="order-detail-success-group-cf"> 交易成功！</div>
+ <component id="LogisticInfoView" />
+ <component id="AddressInOrderView" />
+ <div class="shop-info">
+   <component id="OrderDetailListView"/>
+   <div class="order-fee">
+     <div class="order-delivery-fee">
+       <span class="order-delivery-fee-des">运费</span>
+       <span class="order-delivery-fee-fee"><span class="fee-unit">¥</span><span class="order-delivery-fee-number">0</span>
+     </div>
+     <div class="order-delivery-fee">
+       <span class="order-delivery-fee-des">积分抵款</span>
+       <span class="order-delivery-fee-fee"><span class="fee-unit">¥</span><span class="order-points-fee-number">0</span>
+     </div>
+     <div class="order-product-fee">
+       <span class="order-product-fee-des">合计</span>
+       <span class="order-product-fee-fee"><span class="fee-unit">¥</span><span class="order-product-fee-number">0</span>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="pay-send-selector">
+   <div class="pay-method psb-selector">
+     <span class="pay-method-des psb-selector-des">支付方式</span>
+     <span class="detail-pay-method-value psb-selector-value-order-detail"></span>
+   </div>
+   <div class="send-method psb-selector">
+     <span class="send-method-des psb-selector-des">配送方式</span>
+     <span class="detail-send-method-value psb-selector-value-order-detail"></span>
+   </div>
+   <div class="bill-order-info psb-selector">
+     <span class="bill-method-des psb-selector-des">发票信息</span>
+     <div class="bill-method-value psb-selector-value"></div>
+   </div>
+ </div>
+
+ <div class="order-detail-info">
+   <div class="order-info-info">
+     <span class="order-info-des">订单编号：</span>
+     <span class="order-code-value"></span>
+   </div>
+   <div class="order-info-info order-create-time-sub">
+     <span class="order-info-des">创建时间：</span>
+     <span class="create-order-time"></span>
+   </div>
+   <div class="order-info-info order-pay-time-sub">
+     <span class="order-info-des">付款时间：</span>
+     <span class="order-pay-time"></span>
+   </div>
+   <div class="order-info-info order-send-time-sub">
+     <span class="order-info-des">发货时间：</span>
+     <span class="order-send-time"></span>
+   </div>
+   <div class="order-info-info order-success-time-sub">
+     <span class="order-info-des">成交时间：</span>
+     <span class="order-success-time"></span>
+   </div>
+ </div>
+
+</div>
+
+<div class="order-bottom-bar" style="display: block;">
+  <a class="order-btm-bar-cell order-operation1 theme-color">去评价</a>
+  <a class="order-btm-bar-cell order-operation2 theme-color">去支付</a>
+  <a class="order-btm-bar-cell order-operation3 theme-color">查看物流</a>
+</div>
+<div >
+<div class="order-detail-nothing"style="margin-top: 8rem; margin-left: 4rem;font-size: 0.6rem;display:none;">
+    <div class="tips-ico"><span style="margin-left: 0.4rem;"class="icomoon-time"></span></div>
+    <div class="tips-label" style="margin-left: -1rem;margin-top: 0.4rem;">网络请求超时</div>
+</div>
+  <component id="PopupMenu"/>
+  <component id="SearchMidPageView"/>
+</div>

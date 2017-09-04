@@ -1,0 +1,20 @@
+<li class="cdt-detail-cell">
+  <div class='cdt-detail-desc'><%=desc%></div>
+  <div class='cdt-detail-time'><%=time%></div>
+  <% if(!isNaN(point)){
+    var p = parseInt(point);
+    if(p>0){
+      %>
+      <span class='cdt-detail-point' style='color:#FF6525'>+<%=point%></span>
+      <%
+    }else{
+      %>
+       <span class='cdt-detail-point' style='color:#979797'><%=point%></span>
+      <%
+    }
+  }else{
+    %>
+     <%=point%>
+    <%
+  } %>
+</li>

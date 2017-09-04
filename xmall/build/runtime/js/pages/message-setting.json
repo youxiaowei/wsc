@@ -1,0 +1,25 @@
+{
+  "template":"message-setting",
+  "type": "message-setting",
+  "header": {
+    "title": "消息设置",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    },{
+      "type": "link",
+      "icon": "header-icon-menu icomoon-moremore",
+      "pull": "right",
+      "event": "menuMore"
+      }]
+  },
+  "components": [
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+
+  ]
+}

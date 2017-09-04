@@ -1,0 +1,10 @@
+{
+  "template": "category.html",
+  "type":"category",
+  "components": [
+    {
+      "id":"cate_search_midpage",
+      "type":"SearchMidPageView"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "template":"register-success.html",
+  "type":"register-success",
+  "header":{
+    "title":"注册成功",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  }
+}

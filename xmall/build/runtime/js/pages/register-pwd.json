@@ -1,0 +1,16 @@
+{
+  "template":"register-pwd.html",
+  "type":"register-pwd",
+  "header":{
+    "title":"填写密码",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  }
+  }
+
+
+

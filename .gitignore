@@ -1,0 +1,9 @@
+/node_modules/
+/bower_components/
+/.idea/
+/test/
+/todo-demo/
+/static-starter/
+tags
+.project
+/bin/

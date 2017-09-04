@@ -1,0 +1,13 @@
+{
+  "template":"goodCollected.html",
+  "type":"goodCollected",
+  "components":[
+    {
+      "type": "GoodsCollectorView",
+      "id" : "GoodsCollectorView",
+      "template": "goodscollectorlist.html",
+      "autoload":false,
+      "collection": "GoodsCollector"
+    }
+    ]
+}

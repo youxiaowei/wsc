@@ -1,0 +1,129 @@
+@import "common";
+.meset-item
+{
+	position: relative;
+	.px2rem(height,91);
+	.px2rem(padding-left,21);
+	.px2rem(padding-right,14);
+	background-color: #fff;
+	.px2rem(font-size,28);
+	color:#2E2E2E;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.usersetting-page
+{
+	background-color: #F6F6F6;
+}
+.us-about-v
+{
+.px2rem(font-size,28);
+.px2rem(padding-top,20);
+	color:gray;
+}
+.us-about-top
+{
+	position: relative;
+	.px2rem(padding-top,180);
+	text-align: center;
+}
+.us-logo
+{
+	position: relative;
+	.px2rem(height,160);
+	.px2rem(width,160);
+}
+.meset-jhxxtz
+{
+	justify-content: space-between;
+}
+.meset-toggle
+{
+	position: relative;
+	.px2rem(height,64);
+	.px2rem(border-radius,32);
+	.px2rem(width,104);
+	background-color: #ddd;
+}
+.msset-checkbox
+{
+	position: relative;
+	.px2rem(height,38);
+	.px2rem(width,38);
+	.px2rem(margin-right,19);
+	.px2rem(border-radius,19);
+	border:1px solid #B1B1B1;
+}
+.meset-item-checked .msset-checkbox
+{
+	background-color:#FF6633;
+	border-color:#FF6633;
+}
+.meset-item-checked .msset-checkbox::before{
+	position: absolute;
+	font-family: 'icomoon';
+	content:"\e932";
+	color:#fff;
+	.px2rem(left,4);
+	.px2rem(top,4);
+}
+.meset-toggle::before{
+	position: absolute;
+	content:"";
+	.px2rem(height,58);
+	.px2rem(width,58);
+	.px2rem(left,3);
+	.px2rem(top,3);
+	.px2rem(border-radius,29);
+	background-color: #fff;
+	transition: left .3s ease;
+}
+.meset-toggle-selected
+{
+	background-color: #FF6633;
+}
+.meset-toggle-selected::before{
+	.px2rem(left,41);
+}
+.msset-wltz
+{
+	.px2rem(margin-top,19);
+}
+.user-logout{
+	.px2rem_important(height,90);
+    .px2rem_important(line-height,90);
+     padding: 0 !important;
+	.px2rem(width,690);
+	.px2rem(margin-top,60);
+	.px2rem(font-size,30);
+	color: #ffffff;
+	border-radius: 0.10666667rem;
+}
+.us-yjfk
+{
+	.px2rem(margin-top,20);
+	border-top:1px solid #E5E5E5;
+}
+.us-item
+{
+	position: relative;
+	background-color: #fff;
+	.px2rem(height,91);
+	.px2rem(line-height,91);
+	.px2rem(font-size,30);
+	.px2rem(padding-left,21);
+	color: #666;
+	border-bottom:1px solid #E5E5E5;
+}
+
+.us-item::before
+{
+	position: absolute;
+  font-family: 'icomoon';
+	content:"\e91f";
+	.px2rem(right,29);
+	color:#ACAEAD;
+	top:50%;
+	transform: translateY(-50%);
+}

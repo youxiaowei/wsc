@@ -1,0 +1,14 @@
+{
+  "type":"coupdes",
+  "template":"coupdes.html",
+  "components":[
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

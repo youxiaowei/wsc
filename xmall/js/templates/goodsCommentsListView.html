@@ -1,0 +1,21 @@
+<li class="goods-evaluate-list-li">
+    <div class="goods-evaluate-clear">
+        <div class="goods-evaluate-li-collection">
+            <img class="goods-evaluate-li-head" src="<%=userHead%>">
+        </div>
+        <% if(typeof(userName) != "undefined" ) { %>
+        <span class="goods-evaluate-li-said"><%=userName%></span>
+        <% }else{ %>
+        <span class="goods-evaluate-li-said">未知用户</span>
+        <% } %>
+        <div class="goods-evaluate-li-toggle">
+            <% for(var i=0;i< grade ;i++){ %>
+            <div class="goods-evaluate-li-star icomoon-star"></div>
+            <% } %>
+            <% for(var i=0;i< 5-grade ;i++){ %>
+            <div class="goods-evaluate-li-star-no icomoon-starunclick"></div>
+            <% } %>
+        </div>
+    </div>
+    <div class="goods-evaluate-li-said"><%=comment%></div>
+</li>

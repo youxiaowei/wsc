@@ -1,0 +1,22 @@
+{
+    "template": "my-customerservice.html",
+    "type": "my-customerservice",
+    "components": [
+        {
+            "type": "AllCustomerService",
+            "id": "AllCustomerService",
+            "collection": "AllServiceListCollection",
+            "template": "all-service-list-item.html",
+            "paging": true,
+            "autoload": false
+        },
+        {
+            "id": "SearchMidPageView",
+            "type": "SearchMidPageView"
+        },
+        {
+            "id": "PopupMenu",
+            "type": "PopupMenu"
+        }
+    ]
+}

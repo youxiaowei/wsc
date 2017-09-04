@@ -1,0 +1,54 @@
+<% items.forEach(function(item,index){ %>
+  <div class="evaluate-item" data-oid="<%=orderId%>" data-index="<%=index%>">
+    <div class="goods-details-listitem">
+      <div class="goods-details-img">
+        <img src="<%=item.imgurl%>" alt="" />
+      </div>
+      <div class="goods-details-title">
+        <%=item.name%>
+      </div>
+      <% if(item.type == '1'){ %>
+      <div class="goods-details-spec">
+        <%=item.spec%>
+      </div>
+      <% } %>
+      <div class="goods-details-price">
+        <div class="goods-details-unit-price">
+            ¥<%=item.tradePrice%>
+        </div>
+        <div class="goods-details-number">
+          <%=item.itemNumber%>
+        </div>
+      </div>
+    </div>
+    <div class="evaluate-goods-marking">
+      <div class="evaluate-goods-marking-left">
+        商品满意度
+      </div>
+      <div class="evaluate-goods-marking-star">
+        <i data-star='1' class="evaluate-star unclick icomoon-starunclick"></i>
+        <i data-star='2' class="evaluate-star unclick icomoon-starunclick"></i>
+        <i data-star='3' class="evaluate-star unclick icomoon-starunclick"></i>
+        <i data-star='4' class="evaluate-star unclick icomoon-starunclick"></i>
+        <i data-star='5' class="evaluate-star unclick icomoon-starunclick"></i>
+      </div>
+      <div class="evaluate-goods-marking-right">
+        满意请赏5分哦
+      </div>
+    </div>
+    <div class="evaluate-goods-comment">
+      <div class="evaluate-goods-comment-title">
+        评论
+      </div>
+      <div class="evaluate-goods-comment-content">
+        <textarea class="evaluate-goods-comment-textarea" name="name" rows="8" cols="40">好评</textarea>
+        <div class="evaluate-goods-comment-button">
+          <span class="evaluate-goods-comment-button-share">分享</span>
+          <span class="evaluate-goods-comment-button-submit" data-id="<%=item.id%>" data-orderid="<%=orderId%>">发表评价</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<%
+})
+%>

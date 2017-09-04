@@ -1,0 +1,15 @@
+{
+  "template":"applyAfterSale.html",
+  "type": "applyAfterSale",
+  "template": "applyAfterSale.html",
+  "components" : [
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "template": "myHistory.html",
+    "type": "myHistory",
+    "components": [{
+        "type": "HistoryView",
+        "id": "HistoryView",
+        "template": "history-collection.html",
+        "autoload": false,
+        "collection": "HistoryCollection"
+    }]
+}

@@ -1,0 +1,13 @@
+<div class="coupon-packages-table">
+    <div class="coupon-packages-num">套餐<%=(index+1)%></div>
+    <div class="goods-group">
+      <% for(var i = 0 ; i < products.length; i++){ %>
+       <div class="goods-group-img"><img src="<%=products[i].productImage%>"></div>
+       <% if(i < products.length -1){ %>
+        <div class="goods-plus">+</div>
+      <%
+       }
+      }
+      %>
+    </div>
+</div>

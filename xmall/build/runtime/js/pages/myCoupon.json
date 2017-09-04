@@ -1,0 +1,28 @@
+{
+  "type": "myCoupon",
+  "template": "myCoupon.html",
+  "components": [
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "type": "ListView",
+      "id":"mycouponlistview",
+      "collection": "CouponCollection",
+      "template": "couponlistview.html",
+      "paging":true,
+      "allDataLoaded":false
+    },
+    {
+      "type": "ListView",
+      "id":"unusecouponlistview",
+      "collection": "CouponCollection1",
+      "template": "unusecouponlistview.html"
+    }
+  ]
+}

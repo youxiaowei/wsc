@@ -1,0 +1,223 @@
+@import "common";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yy-clda-bk {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.yy-clda-bk-show
+{
+    opacity: .4;
+    visibility: visible;
+}
+
+.yy-clda-dialog {
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+}
+.yy-clda-dialog-inline
+{
+  position: relative;
+  width: 100%;
+  z-index: 101;
+  background-color: white;
+}
+
+.yy-clda-dialog-show
+{
+    transform: translateY(0);
+}
+
+.yy-clda-btn-wrapper {
+    position: relative;
+    height: 1.2rem;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eee;
+}
+
+.yy-clda-switch-wrapper {
+    position: relative;
+    height: 1.2rem;
+
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eee;
+}
+
+.yy-clda-selector-wrapper {
+    position: relative;
+    .px2rem(height,520);
+}
+
+.yy-clda-year-wrapper, .yy-clda-month-wrapper, .yy-clda-day-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    visibility: hidden;
+}
+
+.yy-clda-month-wrapper ul, .yy-clda-year-area ul {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.yy-clda-month-wrapper ul li, .yy-clda-year-area ul li {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    .px2rem(height,130);
+    .px2rem(line-height,130);
+    border-bottom: 1px solid #eee;
+}
+
+.yy-clda-wrapper-v {
+    opacity: 1;
+    visibility: visible;
+}
+
+.yy-clda-show {
+    display: block;
+}
+
+.yy-clda-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.yy-clda-cell {
+    display: table-cell;
+}
+
+.yy-clda-btn {
+   .px2rem(width,140);
+   font-size: .4rem;
+    color: #007aff;
+}
+
+.yy-clda-vcenter {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.yy-clda-switch-icon {
+    position: relative;
+    .px2rem(width,80);
+}
+
+.yy-clda-switch-icon-left:before, .yy-clda-switch-icon:before {
+    position: absolute;
+    content: "";
+    .px2rem(width,24);
+    .px2rem(height,24);
+    border-top: 2px solid #007aff;
+    border-right: 2px solid #007aff;
+    transform: rotate(45deg);
+    left: 30%;
+    top: 30%;
+}
+
+.yy-clda-month-selected span, .yy-clda-year-selected span {
+    color: white;
+    background-color: #007aff;
+    padding: 6px 10px;
+    .px2rem(padding-top,6);
+    .px2rem(padding-bottom,6);
+    .px2rem(padding-left,10);
+    .px2rem(padding-right,10);
+    border-radius: 13px;
+}
+
+.yy-clda-day-selected span {
+    color: white;
+    background-color: #007aff;
+    display: inline-block;
+    .px2rem(width,48);
+    .px2rem(height,48);
+    .px2rem(line-height,49);
+    text-align: center;
+    .px2rem(border-radius,24);
+}
+
+.yy-clda-switch-icon-left:before {
+    transform: rotate(-135deg);
+}
+
+.yy-clda-week-bar {
+    position: relative;
+    .px2rem(height,60);
+    .px2rem(font-size,26);
+    background-color: #f7f7f7;
+}
+
+.yy-clda-day-scroll {
+    position: relative;
+    .px2rem(height,460);
+}
+
+.yy-clda-day-area, .yy-clda-year-area {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.yy-clda-day-area ul {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+}
+
+.yy-clda-day-area ul li {
+    float: left;
+    width: 14.285714285%;
+    text-align: center;
+    .px2rem(height,76.2);
+    .px2rem(line-height,76.2);
+    .px2rem(font-size,26);
+    border-bottom: 1px solid #eee;
+}
+
+.yy-clda-no-curmonth-day {
+    color: #bbb;
+}
+
+.yy-clda-input-label{
+  .px2rem(font-size,26);
+}
+
+.yy-clda-input
+{
+  position: relative;
+  .px2rem(height,30);
+  .px2rem(line-height,30);
+  .px2rem(font-size,28);
+  border:1px solid #ccc;
+  border-radius: 4px;
+}

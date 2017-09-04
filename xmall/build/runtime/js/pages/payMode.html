@@ -1,0 +1,52 @@
+<div class="pay-mode-page" style="background-color:#fff;height:100%">
+	<div class="pay-information">
+		<span>请支付：</span>
+		<span class="total-pay-num theme-color" style="padding-right: 0.26666667rem; float:right;"></span>
+	</div>
+	<div class="send-mode-zf">支付方式:</div>
+
+	<form id="payId" action="/testDoPay" method="post">
+	    <input type="text" hidden="true" id="orderId" name="orderId"/>
+	    <input type="text" hidden="true" id="payWayId" name="payWayId"/>
+	    <input type="text" hidden="true" id="sendWayId" name="sendWayId"/>
+	</form>
+	 <!-- <div class="pay-mode-des">支付方式</div>
+    <div class="pay-mode-select unionpay-select">
+    	<img src="images/order/card.png" class="pay-mode-img">
+    	<span>网银支付</span>
+    	<span class="icomoon-more"></span>
+    </div>
+    
+   
+		<div class="pay-mode-select point-select">
+    	<img src="images/order/yue.png" class="pay-mode-img">
+    	<span>积分对付</span>
+    	<div class="balance-box">
+	    	<span calss="point-num">0</span>
+    	</div>
+    </div>
+    <div class="pay-mode-select wxpay-select">
+    	<img src="images/order/wechat.png" class="pay-mode-img">
+    	<span>微信支付</span>
+    	<span class="icomoon-more"></span>
+    </div>
+    <div class="pay-mode-select alipay-select">
+    	<img src="images/order/zhifu.png" class="pay-mode-img">
+    	<span>支付宝</span>
+    	<span class="icomoon-more zhifu-balance-more"></span>
+    </div>
+    <div class="pay-mode-select balance-select">
+    	<img src="images/order/yue.png" class="pay-mode-img">
+    	<span>余额支付</span>
+    	<div class="balance-box">
+	    	<span class="balance-num">¥0</span>
+	    	<span class="icomoon-more balance-icomoon-more"></span>
+    	</div>
+    </div> -->
+		<div class='payway-wrapper'></div>
+		<!--<div class='sendway-wrapper'></div>-->
+		<div><button class='btn-pay' disabled="disabled">去支付</button></div>
+
+    <component id='balancePayment'/>
+
+</div>

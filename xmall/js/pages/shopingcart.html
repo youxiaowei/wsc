@@ -1,0 +1,49 @@
+<header>
+  <div class="headerbox">
+    <div  class="shopingcart-back left-right nav-left" display="padding-left:10px">
+      <span  id="shopingcart-back" class="icomoon icomoon-back goback"></span>
+    </div>
+    <div class='mid' >
+      购物车
+    </div>
+    <div class="left-right nav-left shoping-cart-menu">
+      <span  id="shopingcart-ed" class="shopingcart-ed common-menu-btn">
+       编辑
+      </span>
+      <!-- <span class="icomoon icomoon-moremore common-menu-btn shopping-car-icomoon"></span>  -->
+    </div>
+  </div>
+
+</header>
+<div class="shopingcart-content">
+  <component id="shopingcartlistview" />
+  <div class="shopingcartlist_empty">
+      <div class="icomoon-empty shopcart_empty_ico"></div>
+      <span class="cart_empty_label">购物车空空哒~</span>
+      <div><button class="goToShopping theme-backgorund-color theme-border-color">去逛逛</button></div>
+  </div>
+
+  <div class="unlogin_tips">
+      <div class="unlogin_tips_label">您还未登录</div>
+      <div><button class="unlogin_tips_btn theme-backgorund-color theme-border-color">去登录</button></div>
+  </div>
+
+  <component id="PushForYouView" />
+</div>
+<div class="shopingcart-footer">
+  <span class="icomoon icomoon-choicebox shopingcart-choicebox-all"></span>
+  <span class="shopingcart-info-all">全选</span>
+  <span class="shopingcart-info-total">合计：<span class="shopingcart-info-total-price">0</span></span>
+  <span class="shopingcart-settlement theme-backgorund-color">去结算</span>
+</div>
+<div class="shopingcart-manage">
+  <span class="icomoon icomoon-choicebox shopingcart-choicebox-manage">
+    <span class="shopingcart-manage-allchoic">全选</span>
+  </span>
+  <span class="shopingcart-manage-delete theme-color theme-border-color">删除</span>
+  <!-- <span class="shopingcart-manage-collection">移入收藏</span> -->
+</div>
+<div>
+  <component id="CartEditorView" />
+  <component id="PopupMenu" />
+</div>

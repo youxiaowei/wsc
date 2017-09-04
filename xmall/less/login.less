@@ -1,0 +1,170 @@
+@import "common";
+.header-icon-back{
+  position: relative;
+  .px2rem(line-height,88);
+  .px2rem(width,80);
+  .px2rem(padding-left,10);
+  display: inline-block;
+  font-size:0.5rem;
+  color: #aaaaaa;
+  z-index: 20;
+}
+
+.header-icon-menu{
+  position: relative;
+  .px2rem(line-height,80);
+  font-size:0.5rem;
+  color: #aaaaaa;
+  padding: 0 0.2rem;
+  z-index: 20;
+}
+.login-page-view{
+  background-color:#fff;
+  height:100%;
+
+  .login-view-normal{
+    margin:0px 0px;
+    padding:0px 0px;
+
+    .login-image{
+      text-algin:center;
+      text-align: -webkit-center;
+      .px2rem(padding-top,60);
+      .px2rem(height,210);
+      img{
+        .px2rem(height,130);
+      }
+    }
+    .input-label-pwd{
+      color: #666666;
+      .px2rem(font-size,30);
+    }
+    .input-label-account{
+      color: #666666;
+      .px2rem(font-size,30);
+    }
+    .input-background{
+      .px2rem(margin-left,30);
+      .px2rem(margin-right,30);
+      background-color:#fff;
+      border-bottom:solid 1px #ccc;
+    }
+    .input-accountdiv{
+
+      vertical-align: middle;
+      .px2rem(height,100);
+      .px2rem(line-height,100);
+      background-color:#fff;
+    }
+    .input-account{
+      border:0px;
+      width:80%;
+      .px2rem(height,50);
+      color: #666666;
+      .px2rem(font-size,30);
+      .px2rem(line-height,50);
+    }
+    .input-pwddiv{
+      .px2rem(margin-left,30);
+      .px2rem(margin-right,30);
+      border-bottom:solid 1px #ccc;
+      vertical-align: middle;
+      .px2rem(height,100);
+      .px2rem(line-height,100);
+      margin-bottom:20px;
+      background-color:#fff;
+    }
+    .input-pwd{
+      border:0px;
+      width:70%;
+      color: #666666;
+      .px2rem(height,50);
+      .px2rem(font-size,30);
+      .px2rem(line-height,50);
+    }
+  }
+  .btnLogin{
+    .px2rem(height,88);
+    .px2rem(width,690);
+    margin: 10px auto;
+    .px2rem(margin-bottom,44);
+    .px2rem(margin-top,60);
+    display: block;
+    padding: 15px 0;
+    .px2rem(font-size,30);
+    border-radius: 0.1rem;
+    cursor: pointer;
+    font-family: "Microsoft YaHei";
+    white-space: nowrap;
+    color: #fff;
+    border:1px solid ;
+  }
+  .btnLogin.active{
+    .px2rem(height,88);
+    .px2rem(width,690);
+    margin: 10px auto;
+    .px2rem(margin-bottom,44);
+    .px2rem(margin-top,60);
+    display: block;
+    padding: 15px 0;
+    .px2rem(font-size,30);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,sans-serif;
+    white-space: nowrap;
+    color: #fff;
+    border:1px solid ;
+  }
+  .label-remmber{
+    .px2rem(padding-left,30);
+    .px2rem(padding-right,30);
+    .px2rem(font-size,26);
+  }
+  .login-forgetpwd{
+    float: right;
+    color: #666666;
+  }
+  .login-toast{
+    position: fixed;
+    background-color: #000000;
+    .px2rem(border-radius,10);
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    .px2rem(line-height,80);
+    .px2rem(width,300);
+    .px2rem(height,94);
+    .px2rem(margin-left,224);
+    .px2rem(bottom,100);
+    display: none;
+    opacity: 0;
+
+    p{
+      color:#fff;
+      .px2rem(font-size,26);
+    }
+  }
+  .login-toast-active{
+    display: block;
+    opacity: 0.7;
+  }
+  .wechat-button{
+    position: absolute;
+    bottom: 0;
+    color: #666666;
+    text-align: center;
+    background-color: #F9F9F9;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    .px2rem(font-size,30);
+    .px2rem(height,100);
+    .px2rem(line-height,100);
+    .wechat-img{
+      position: relative;
+      .px2rem(top,4);
+      .px2rem(width,40);
+      .px2rem(height,32);
+      .px2rem(margin-top,32);
+    }
+  }
+}

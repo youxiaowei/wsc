@@ -1,0 +1,34 @@
+{
+  "style":"background-color: white;",
+  "template": "business.html",
+  "type":"business",
+  "components":[
+    {
+      "id":"searchMidPageView",
+      "type":"SearchMidPageView"
+    },
+    {
+      "type": "HomePushView",
+      "id" : "allproducts",
+      "paging": true,
+      "autoload": false,
+      "template": "business-product.html",
+      "collection": "BusunessAllProductsCollection"
+    },{
+      "type": "HomePushView",
+      "id" : "newproducts",
+      "template": "business-product.html",
+      "paging": true,
+      "autoload": false,
+      "collection": "BusunessNewProductsCollection"
+    },{
+      "type": "Detailslist",
+      "id" : "business-detailslist"
+    },{
+      "style":"display:block",
+      "type": "BussinessCategory",
+      "id":"business-category"
+    }
+
+  ]
+}

@@ -1,0 +1,21 @@
+<ul class="table-view" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); margin-bottom: 5px; background-color: rgb(255, 255, 255); padding-top: 1.17333333rem;">
+	<%for(var i=0;i < suitList.length;i++) {%>
+	 <li class="table-view-cell media  favorite-item list-content" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); ">
+	  <div class="list-item">
+	    <div hidden="true" class="package-list-id"><%=suitList[i].SUIT_ID%></div>
+	    <img class="item-media-object media-object pull-left item-media-object-single-line" src="<%=suitList[i].IMG_URL%>">
+	    <div class="media-body item-media-body">
+	         <div class="package-list-title">
+	            <!-- 101020套餐商品 大米+红桃+甘露 --><%=suitList[i].SUIT_TITLE%>
+	         </div>
+	         <div class="package-list-Selling"><!--  超值好礼   促销优惠 --><%=suitList[i].REMARK %><i>热销</i></div>
+	         <div class="package-list-money">￥<!--  12202 --><%=suitList[i].SALE_PRICE %> <span><!-- 22500 --></span></div>
+	         <div class="package-list-shopping">
+	              <div><!-- 购买：130 --></div>
+	              <div class="text-right"><!-- 评价：120 --></div>
+	         </div>
+	    </div>
+	  </div>
+	</li>
+	<%}%>
+</ul>

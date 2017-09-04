@@ -1,0 +1,120 @@
+<div class="my-account-view">
+  <header class="headerbox">
+      <div class="left-right nav-left goback">
+          <span class="icomoon icomoon-back"></span>
+      </div>
+      <div class='mid'>
+        <span class="common-title">个人资料</span>
+      </div>
+      <div class="left-right nav-right">
+
+      </div>
+  </header>
+
+  <div class="my-page-view">
+    <div class="my-account-content">
+      <div class="my-head">
+        <div class="item-cell-left account-cell-left">
+          <div class="cell-left-name">
+            头像
+          </div>
+        </div>
+        <div class="item-cell-right head-right-icon item-right-icon icomoon-details"></div>
+        <div class="item-cell-right">
+          <img id="head-image-user-head" class="head-image user-head" src="<%= headurl ? headurl : './images/login/person_head.png' %>" />
+        </div>
+
+      </div>
+      <div class="my-item-cell notify-name">
+            <div class="item-cell-left account-cell-left">
+                <div class="cell-left-name">
+                    昵称
+                </div>
+            </div>
+            <div class="item-cell-right">
+                <div class="item-right-name account-user-name">
+                    <%if(name)%><%=name%>
+                    <%else{ var tips="设置昵称"%><%=tips%><%}%>
+                </div>
+                <div class="item-right-icon icomoon-details"></div>
+            </div>
+      </div>
+
+        <div class="my-item-cell user-account" style="display: none">
+        <div class="item-cell-left account-cell-left">
+          <div class="cell-left-name">
+            昵称
+          </div>
+        </div>
+        <div class="item-cell-right">
+          <div class="item-right-name"><%=account%></div>
+          <div class="item-right-icon icomoon-details"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="second-row-group">
+
+      <div class="my-item-cell notify-sex">
+        <div class="item-cell-left account-cell-left">
+          <div class="cell-left-name">
+            性别
+          </div>
+        </div>
+        <div class="item-cell-right">
+          <div class="item-right-name account-user-sex">
+              <%if(sex)%><%=sex%>
+              <%else{ var tips="保密"%><%=tips%><%}%>
+          </div>
+          <div class="item-right-icon icomoon-details"></div>
+        </div>
+      </div>
+
+      <div class="my-item-cell item-birthday" style="display:none">
+        <div class="item-cell-left account-cell-left">
+          <div class="cell-left-name">
+            出生日期
+          </div>
+        </div>
+        <div class="item-cell-right">
+          <div class="item-right-name birthday-content">
+              <%if(birthday)%><%=birthday%>
+              <%else{ var tips="设置出生日期"%><%=tips%><%}%>
+          </div>
+          <div class="item-right-icon icomoon-details"></div>
+        </div>
+      </div>
+
+      <div class="my-item-cell item-address">
+          <div class="item-cell-left account-cell-left">
+              <div class="cell-left-name">
+                    我的收货地址
+              </div>
+          </div>
+          <div class="item-cell-right">
+              <div class="item-right-name address-content">
+                    设置收货地址
+              </div>
+              <div class="item-right-icon icomoon-details"></div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="my-item-cell item-security">
+        <div class="item-cell-left account-cell-left">
+            <div class="cell-left-name">
+                账户安全
+            </div>
+        </div>
+        <div class="item-cell-right">
+            <div class="item-right-icon icomoon-details"></div>
+        </div>
+    </div>
+
+    <div class="bottom-cell-line"></div>
+
+    <input type="date" class="trigger-calendar">
+  </div>
+
+</div>

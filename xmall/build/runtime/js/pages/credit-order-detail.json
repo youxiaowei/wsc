@@ -1,0 +1,27 @@
+{
+  "type": "credit-order-detail",
+  "template": "credit-order-detail.html",
+  "components":[
+    {
+      "type":"LogisticInfoView",
+      "id":"LogisticInfoView"
+    },
+    {
+      "type":"AddressInOrderView",
+      "id":"AddressInOrderView"
+    },
+    {
+      "type": "ListView",
+      "id": "OrderDetailListView",
+      "collection":"AjaxCollection",
+      "template":"credit-order-detail-product-list-item.html"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

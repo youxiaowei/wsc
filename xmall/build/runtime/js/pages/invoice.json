@@ -1,0 +1,28 @@
+{
+  "template":"invoice.html",
+  "type": "invoice",
+  "header": {
+    "title": "发票信息",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    },{
+      "type": "link",
+      "icon": "header-icon-menu icomoon-moremore",
+      "pull": "right",
+      "event": "menuMore"
+      }]
+  },
+  "components":[
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+}

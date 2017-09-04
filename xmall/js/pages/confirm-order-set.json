@@ -1,0 +1,18 @@
+{
+  "template": "confirm-order-set.html",
+  "type":"confirm-order-set",
+    "components":[
+    {
+      "id":"GroupBuyListView",
+      "type":"GroupBuyListView",
+      "collection":"ConfirmOrderSetCollection"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "template": "credit-list.html",
+  "type":"credit-list",
+    "components": [
+    {
+      "id":"Creditlistingerror",
+      "type":"Creditlistingerror",
+      "template":"credit-list-item.html",
+      "collection":"credit-list",
+      "paging": true,
+      "autoload": false
+    },
+     {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+}

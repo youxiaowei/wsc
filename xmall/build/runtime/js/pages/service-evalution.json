@@ -1,0 +1,20 @@
+{
+  "template": "service-evalution.html",
+  "type":"service-evalution",
+  "components" : [
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    },
+    {
+      "id": "SenderSelect",
+      "type": "SenderSelect",
+      "collection": "senderCollection",
+      "template": "senderSelect.html"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<% if( isdefault=='true') {%>
+<li class="address-view-li" default="true" >
+<% } else {%>
+<li class="address-view-li" default="false" >
+<% } %>
+  <div class="address-view-list">
+    <div class="address-view-top">
+      <div class="address-view-name"><%=receiver%> </div>
+      <div class="address-view-phone"><%=receiverPhone%> </div>
+      <div class="address-detail-div">
+        <div class="address-view-detail"><%=receiverProvince%><%=receiverCity%><%=receiverRegion%><%=receiverAddr%></div>
+      </div>
+    </div>
+    <div class="address-view-selected ">
+      <% if( isdefault=='false') {%>
+      <div class="address-selected-left"  data-name="defaultSet">
+          <span class="icomoon-choicebox icon-icomoon-address" data-name="defaultSet"></span>
+          <span class="address-view-cancelLabel defaultlabel"  data-name="defaultSet">设为默认</span>
+      </div>
+      <div class="address-selected-right">
+        <span class="icomoon-compile icon-icomoon-address" data-name="edit"></span>
+        <span  class="address-view-cancelLabel" data-name="edit">编辑</span>
+        <span  class="icomoon-delete icon-icomoon-address" data-name="delete"></span>
+        <span  class="address-view-cancelLabel" data-name="delete">删除</span>
+      </div>
+      <% } else {%>
+      <div class="address-selected-left"  data-name="defaultSet">
+        <span class="icomoon-choice active theme-color icon-icomoon-address" data-name="defaultSet"></span>
+        <span class="address-view-cancelLabel defaultlabel" data-name="defaultSet">默认地址</span>
+      </div>
+      <div class="address-selected-right">
+        <span class="icomoon-compile icon-icomoon-address"  data-name="edit"></span>
+        <span class="address-view-cancelLabel" data-name="edit">编辑</span>
+        <span class="icomoon-delete icon-icomoon-address" data-name="delete"></span>
+        <span class="address-view-cancelLabel"  data-name="delete">删除</span>
+      <% } %>
+    </div>
+  </div>
+  </div>
+</li>

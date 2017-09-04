@@ -1,0 +1,14 @@
+{
+  "template":"evaluate.html",
+  "type":"evaluate",
+  "components": [{
+      "type": "EvaluatePushView",
+      "id" : "EvaluatePushView",
+      "template": "evaluatepush.html",
+      "autoload":false,
+      "paging":true,
+      "collection": "EvaluateGoodsModel"
+    }
+  ]
+
+}

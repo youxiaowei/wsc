@@ -1,0 +1,26 @@
+@import "common";
+.item-sex{
+  margin-right:0.4rem !important;
+}
+.nofity-sex-info{
+  width:100%;
+  height:100%;
+  position: fixed;
+  z-index: 25;
+  background-color: #fafafa;
+  top:0px;
+  transition: all 0.3s ease;
+  transform: translate3d(100%, 0, 0);
+}
+.nofity-sex-info-show{
+  transform: translate3d(0, 0, 0) !important;
+}
+.notify-sex-checked{
+  .px2rem(left,30);
+  .px2rem(width,40);
+  .px2rem(height,25);
+  border-top:0.07rem solid ;
+  border-right:0.07rem solid ;
+  transform: rotate(135deg);
+  content: "";
+}

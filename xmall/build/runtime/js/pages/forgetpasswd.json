@@ -1,0 +1,20 @@
+{
+  "template":"forgetpasswd.html",
+  "type":"forgetpasswd",
+  "header": {
+    "title": "忘记密码",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components": [
+  {
+      "id": "switchView",
+      "type": "SwitchView",
+      "IsOpen":false
+    }
+  ]
+}

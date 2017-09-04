@@ -1,0 +1,20 @@
+{
+  "template": "my-address.html",
+  "type":"my-address",
+  "components" : [
+    {
+      "type": "AddressListView",
+      "id" : "AddressListView",
+      "template": "addressListView.html",
+      "collection": "AddressListCollection"
+    },
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+    ]
+}

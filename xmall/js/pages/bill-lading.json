@@ -1,0 +1,23 @@
+{
+  "template": "bill-lading.html",
+  "type":"bill-lading",
+    "components":[
+    {
+      "type": "AddressInOrderView",
+      "id": "AddressInOrderView"
+    },
+    {
+      "id":"GroupBuyListView",
+      "type":"GroupBuyListView",
+      "template":"bill-loding-item.html",
+      "collection":"packageCollection"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }, {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<div class="shop-info">
+  <div class="shop-goodslist">
+    <ul class="shop-goodslist-ul">
+      <% for(var i = 0; i<items.length;i++){ %>
+        <li>
+          <div class="goods-details-listitem">
+            <div class="goods-details-img-points">
+              <img src="<%=items[i].imgurl%>" alt="" />
+            </div>
+            <div class="goods-details-content-points">
+              <div class="goods-details-title-points">
+                <%=items[i].name%>
+              </div>
+              <!--<div class="goods-details-spec-points">
+                &lt;!&ndash; <%=items[i].spec%> &ndash;&gt;
+                颜色分类：红色; 尺码：37
+              </div>-->
+              <div class="goods-details-price-points">
+                <div class="goods-details-unit-price theme-color">
+                  <%=items[i].point%>分
+                </div>
+                <div class="goods-details-number">
+                  x<%=items[i].itemNumber%>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      <% }%>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+{
+  "type": "branddetail",
+  "header": {
+    "title": " ",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components" : [
+    {
+      "type": "FilterControlView",
+      "id":"FilterControlView"
+    },
+    {
+      "type": "BranddetailListFilter",
+      "id": "ProductListFilter"
+    },
+    {
+      "style": "padding-top:2.4rem;",
+      "type": "ProductListView",
+      "id" : "ProductListView",
+      "paging": true,
+      "autoload": false,
+      "template": "product-list.html",
+      "collection": "ProductListCollection"
+    },
+    {
+      "type":"Blank_pageView",
+      "id":"Blank_pageView"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "template":"security.html",
+  "type":"security",
+  "header":{
+    "title":"账户安全",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  }
+}

@@ -1,0 +1,124 @@
+@import "common";
+.shop-collector-image{
+  float: left;
+}
+.shop-collector-name{
+  .px2rem(font-size,28);
+  .px2rem(margin-left,22);
+  .px2rem(line-height,164);
+  color: #2e2e2e;
+  width: 50%;
+  display:block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  float: left;
+}
+.shop-collector-selected{
+  .px2rem(font-size,20);
+  .px2rem(margin-right,30);
+  .px2rem(margin-top,60);
+  text-align: center;
+  .px2rem(line-height,46);
+  color: #666666;
+  .px2rem(width,165);
+  .px2rem(height,66);
+  float: right;
+}
+.shop-collector-btn{
+  //colin yeah 2015/12/11 add
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  .px2rem(width,145);
+  .px2rem(height,46);
+  margin: 0 auto;
+}
+.collector-icon{
+  .px2rem(height,88);
+  .px2rem(line-height,88);
+  .px2rem(padding-left,40);
+  .px2rem(font-size,40);
+  color: #aaaaaa;
+}
+.collector-image-style{
+  .px2rem(margin-top,30);
+  .px2rem(margin-left,30);
+  .px2rem(margin-bottom,30);
+  .px2rem(height,102);
+  .px2rem(width,102);
+  vertical-align: middle;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.shop-collector-li{
+  border-bottom:1px solid #e6e6e6;
+  .px2rem(height,164);
+}
+.shop-collector-list::after{
+  clear: both;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+  display: block;
+}
+.collector-title{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #f5f5f5;
+  .px2rem(height,88);
+}
+.collector-toggle{
+  text-align: center;
+  .px2rem(height,58);
+  width: 100%;
+  .px2rem(line-height,58);
+}
+.collector-icon{
+  position: absolute;
+}
+.collector-goods-selected{
+  color: #ffffff;
+  .px2rem(width,163);
+  .px2rem(font-size,28);
+  .px2rem(margin-top,10);
+  .px2rem(margin-bottom,10);
+  border-radius: 8px 0px 0px 8px;
+  border: 2px solid;
+  border-right: 0px;
+  display: inline-block;
+}
+.collector-goods{
+  background-color: #f5f5f5;
+  .px2rem(width,163);
+  .px2rem(font-size,28);
+  .px2rem(margin-top,10);
+  .px2rem(margin-bottom,10);
+  border-radius: 8px 0px 0px 8px;
+  border: 2px solid;
+  border-right: 0px;
+  display: inline-block;
+}
+.collector-shop-selected{
+  color: #ffffff;
+  .px2rem(font-size,28);
+  .px2rem(margin-top,10);
+  .px2rem(margin-bottom,10);
+  .px2rem(width,163);
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 0px 8px 8px 0px;
+  border-left: 0px;
+}
+.collector-shop{
+  background-color: #f5f5f5;
+  .px2rem(font-size,28);
+  .px2rem(margin-top,10);
+  .px2rem(margin-bottom,10);
+  .px2rem(width,163);
+  display: inline-block;
+  border: 2px solid ;
+  border-radius: 0px 8px 8px 0px;
+  border-left: 0px;
+}

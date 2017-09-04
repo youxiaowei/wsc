@@ -1,0 +1,56 @@
+
+<header class="headerbox">
+      <div class=" nav-left header-icon-back address-title-icon">
+          <span class="icomoon icomoon-back"></span>
+      </div>
+      <div class='mid'>
+        <span class="common-title">确认订单</span>
+      </div>
+      <div class="left-right nav-right">
+
+      </div>
+
+  </header>
+  <div class="create-order">
+  <component id="AddressInOrderView" />
+  <component id="OrderShopListView"/>
+  <!-- 支付方式、配送方式-->
+  <div class="pay-send-selector">
+    <div class="send-method-order psb-selector">
+      <span class="pay-send-des psb-selector-des">配送方式</span>
+      <span class="icomoon icomoon-more psb-selector-more"></span>
+      <span id="point-send-value" class="send-method-value psb-selector-value"></span >
+    </div>
+    <!--<div class="bill-order-info psb-selector">
+      <span class="bill-method-des psb-selector-des">发票信息</span>
+      <span class="icomoon icomoon-more psb-selector-more"></span>
+      <div class="bill-method-value psb-selector-value">不需要</div>
+    </div>-->
+  </div>
+  <div class="order-message">
+    <input type="text" placeholder="备注：您有什么要求，可以写在这里" class="message"/>
+  </div>
+
+  <!--<div class="pay-send-selector">
+    <div class="order-fee-info-points" style="padding-bottom: 0">
+      <span class="order-fee-info-points-des">商品金额</span>
+      <span class="order-fee-info-points-value theme-color"></span>
+      <span class="order-fee-info-points-value-des">合计：</span>
+    </div>-->
+    <!--<div class="order-fee-info-points">
+      <span class="order-fee-info-points-des">运费</span>
+      <span class="order-fee-info-points-post-value theme-color">¥0.00</span>
+    </div>-->
+  </div>
+
+ <!-- 底部bar -->
+ <div class="order-btm-bar" style="position: fixed">
+   <div class="order-total-fee order-total-fee-points">
+     <span class="order-total-fee-des order-total-fee-des-points">所需积分：</span>
+     <span class="order-total-fee-fee order-total-fee-fee-points">0</span>
+     <span class="order-total-fee-fee-points">积分</span>
+   </div>
+   <div class="order-submit theme-backgorund-color">去结算</div>
+ </div>
+
+</div>

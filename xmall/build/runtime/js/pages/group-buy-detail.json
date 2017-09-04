@@ -1,0 +1,32 @@
+{
+  "template": "group-buy-detail.html",
+  "type": "group-buy-detail",
+  "components": [{
+    "id": "carousel",
+    "type": "CarouselView",
+    "slickOptions": {
+      "lazyLoad": "progressive",
+      "dots": true,
+      "autoplay": true,
+      "swipeToSlide": true,
+      "speed": 300,
+      "arrows": false
+    },
+    "collection": "itemDetailCollection"
+  }, {
+    "id": "PopupMenu",
+    "type": "PopupMenu"
+  }, {
+      "type": "MySegmentedView",
+      "id": "MySegmentedView",
+      "items": [{
+        "id": "ProductDetailInfoView",
+        "name": "商品详情",
+        "type": "ProductDetailInfoView"
+      }]
+    },
+  {
+    "id": "SearchMidPageView",
+    "type": "SearchMidPageView"
+  }]
+}

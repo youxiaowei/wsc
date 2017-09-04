@@ -1,0 +1,24 @@
+{
+  "type" : "product-list",
+  "components" : [
+    {
+      "id":"SearchMidPageView",
+      "type":"SearchMidPageView"
+    },
+    {
+      "type": "ProductListHeader"
+    },
+    {
+      "type": "ProductListFilter"
+    },
+    {
+      "style":"padding-top:2.4rem",
+      "type": "ProductListView",
+      "id" : "ProductListView",
+      "template": "product-list.html",
+      "paging": true,
+      "autoload": false,
+      "collection": "ProductListCollection"
+    }
+  ]
+}

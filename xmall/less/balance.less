@@ -1,0 +1,285 @@
+@import "common";
+.myCoupon-title{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index:9;
+}
+.myBalance-title{
+  .px2rem(margin-left,70);
+}
+.my-bacou-header
+{
+  width:100%;
+  height:1.17333333rem;
+  color:#333;
+  .px2rem(font-size,35);
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.my-bacou-header .icomoon-back
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 1.2rem;
+  justify-content: center;
+  color:#999;
+  font-size: 0.6rem;
+}
+
+.my-bacou-header .icomoon-moremore
+{
+  .px2rem(margin-right,26);
+  height: 1.17rem;
+  line-height: 1.17rem;
+  color:#999;
+}
+
+.my-bacou-header-right
+{
+  position: relative;
+  display: flex;
+  flex: row;
+  height:100%;
+  align-items: center;
+  justify-content: space-around;
+  color: #999;
+}
+.my-bacou-header-right button
+{
+  border:none;
+  background-color: #fff;
+  .px2rem(margin-right,37);
+  .px2rem(font-size,32);
+}
+.my-bacou-body
+{
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.27333333rem;
+}
+.my-bacou-body img
+{
+  position: relative;
+  .px2rem(width,201);
+  .px2rem(height,201);
+  margin: auto;
+}
+.my-bacou-body button
+{
+  position: relative;
+  border:none;
+  background-color: #FF6633;
+  width:90%;
+  color:#fff;
+  .px2rem(height,80);
+  .px2rem(font-size,30);
+  align-self: center;
+  .px2rem(border-radius,8);
+  .px2rem(margin-top,120);
+}
+.my-bacou-price
+{
+  color:#666666;
+  .px2rem(margin-top,39);
+}
+.my-bacou-price span:first-child{
+  .px2rem(font-size,48);
+}
+.my-bacou-price span:last-child{
+  .px2rem(font-size,60);
+}
+.my-cou-tabs
+{
+  display: flex;
+  z-index: 10;
+  top:1.17333333rem;
+  left:0;
+  width:100%;
+  color:#666666;
+  .px2rem(font-size,30);
+  position: fixed;
+}
+.padding-header-coupon{
+  width:100%;
+  height:2.25rem;
+}
+.my-cou-tabs-item
+{
+  position: relative;
+  text-align: center;
+  flex:1;
+  .px2rem(height,81);
+  .px2rem(line-height,81);
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+
+.my-cou-tabs-selected
+{
+  color:#FF6633;
+}
+.my-cou-tabs-selected:before{
+  position: absolute;
+  content:"";
+  bottom:0;
+  height:0.07rem;
+  background-color:#FF6633;
+  left:0;
+  width:100%;
+}
+.my-cou-list-wrapper
+{
+  position: relative;
+}
+.coupon-item
+{
+  .px2rem(padding-top,35);
+  .px2rem(padding-bottom,31);
+  .px2rem(padding-left,31);
+  .px2rem(padding-right,31);
+  .px2rem(margin-top,25);
+  .px2rem(margin-right,35);
+  .px2rem(margin-left,35);
+  background:white url("../images/balance/coupon.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  //border-bottom:1px solid #eee;
+}
+.unusecoupon-item
+{
+  position: relative;
+  .px2rem(margin-top,25);
+  .px2rem(margin-right,35);
+  .px2rem(margin-left,35);
+  .px2rem(padding-top,35);
+  .px2rem(padding-bottom,31);
+  .px2rem(padding-left,31);
+  .px2rem(padding-right,31);
+  background:white url("../images/balance/coupon.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+
+}
+.overduecoupon-item{
+  position: relative;
+  .px2rem(margin-top,25);
+  .px2rem(margin-right,35);
+  .px2rem(margin-left,35);
+  .px2rem(padding-top,35);
+  .px2rem(padding-bottom,31);
+  .px2rem(padding-left,31);
+  .px2rem(padding-right,31);
+  background:white url("../images/balance/coupon_outmoded.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+
+}
+.coupon-item-bottom,.coupon-item-top{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.coupon-item-bottom{
+  .px2rem(margin-top,100);
+}
+.coupon-item-name
+{
+  position: relative;
+  .px2rem(font-size,36);
+  color:#979797;
+}
+.coupon-item-value
+{
+  position: relative;
+  .px2rem(font-size,60);
+  color:#FF6633;
+}
+.unusecoupon-item-value
+{
+  position: relative;
+  .px2rem(font-size,60);
+  color:#FF6633;
+}
+.overduecoupon-item-value{
+  position: relative;
+  .px2rem(font-size,60);
+  color:#B1B1B1;
+}
+
+.coupon-item-deadline
+{
+  position: relative;
+  .px2rem(font-size,22);
+  color:#979797;
+}
+.coupon-item-desc{
+  position: relative;
+  .px2rem(font-size,24);
+  color:#979797;
+  display: flex;
+  align-items: flex-end;
+}
+.coupon-item-use-btn
+{
+  .px2rem(width,169);
+  .px2rem(height,51);
+  color:#ffffff;
+  background-color: #FF6633;
+  .px2rem(border-radius,6);
+  border:none;
+  .px2rem(font-size,24);
+  outline: none;
+}
+.cou-shuoming
+{
+  text-align: right;
+  padding-right: 0.46666667rem;
+  padding-top: 0.26666667rem;
+  color:#FF6633;
+}
+.cou-shuoming span
+{
+  display: inline-block;
+  position: relative;
+  .px2rem(width,36);
+  text-align: center;
+  .px2rem(height,36);
+  .px2rem(line-height,33);
+  .px2rem(border-radius,18);
+  .px2rem(margin-right,14);
+  border:2px solid #FF6633;
+
+}
+
+.checkout-voercoupon{
+  text-align: center;
+  color: #979797;
+  margin-top:0.25rem;
+  padding-bottom:0.25rem;
+  .px2rem(font-size,26);
+  .overdue-button{
+    display: inline-block;
+    .px2rem(padding-bottom,20);
+  }
+}
+.clear-overcoupon{
+  text-align: center;
+  color: #979797;
+  .px2rem(font-size,26);
+  padding-bottom:0.25rem;
+  margin-top:0.25rem;
+  .clear-button{
+    display: inline-block;
+    .px2rem(padding-bottom,20);
+    .px2rem(padding-left,50);
+    .px2rem(padding-right,50);
+  }
+}

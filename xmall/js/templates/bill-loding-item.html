@@ -1,0 +1,24 @@
+<%for(var i=0;i< selectGoods.length;i++){ %>
+  <% if(selectGoods[i].goodsRestNum != 0){ %>
+<li class="table-view-cell media favorite-item list-content"
+	style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221);">
+	<div class="goodsListDataId" hidden="true"><%=selectGoods[i].goodsId%></div>
+	<div class="bill-ladtitle" style="font-size: 0.41rem;">预计发货时间 <%=selectGoods[i].startTime%></div>
+	<div class="list-item">
+		<img
+			class="item-media-object media-object pull-left item-media-object-single-line"
+			src="<%=selectGoods[i].selectGoodsImage%>">
+		<div class="media-body item-media-body">
+			<div class="bill-protuct-name" style="font-size: 0.34666667rem;">
+				<%=selectGoods[i].goodsName%></div>
+			<div class="bill-protuct-number" style="font-size: 0.34666667rem;">可提数量：<span class="numnum"><%=selectGoods[i].goodsRestNum%></span></div>
+			<!-- <div class="bill-delivery-goods" style="font-size: 0.34666667rem;">已提货：<%=selectGoods[i].usedNumber%></div> -->
+			<div class="ogids" style="display:none"><%=selectGoods[i].ogid%></div>
+		</div>
+		<div class="quantity-delivery" style="font-size: 0.34666667rem;">
+			本次提货数量   <input class="num" style="font-size: 0.34666667rem;" />
+		</div>
+	</div>
+</li>
+ <%}%>
+<%}%>

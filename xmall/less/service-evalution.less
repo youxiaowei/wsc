@@ -1,0 +1,108 @@
+@import "common";
+
+.blank-top{
+  .px2rem(height,88);
+}
+.select-comment-type{
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  .px2rem(height,92);
+  .px2rem(line-height,92);
+  .px2rem(padding-left,20);
+  .px2rem(padding-right,20);
+  border-bottom: 1px solid #E5E5E5;
+  .first-group{
+    .px2rem(margin-right,164);
+  }
+}
+
+.service-comment-type-group{
+  display: inline-block;
+  .icomoon-choicebox{
+    .px2rem_important(font-size,56);
+  }
+  .service-comment-type{
+    vertical-align: middle;
+    color: #666666;
+    .px2rem(font-size,28);
+  }
+  .type-choice-ico{
+    vertical-align: middle;
+    .px2rem(font-size,55);
+    color: #B1B1B1;
+  }
+}
+
+.service-comment-content{
+  .px2rem(margin-top,20);
+  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5;
+  .px2rem(padding-top,20);
+  background-color: white;
+  .service-comment-level{
+    .px2rem(padding-left,20);
+    .px2rem(padding-right,20);
+    .comment-target{
+      .px2rem(font-size,26);
+      color: #666666;
+    }
+
+    .level-group{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .px2rem(padding-top,19);
+      .px2rem(padding-bottom,20);
+    }
+  }
+
+}
+
+.comment-level-block{
+  text-align: center;
+  .px2rem(width,130);
+  .px2rem(height,50);
+  .px2rem(line-height,50);
+  .px2rem(font-size,24);
+  border-radius: 5px;
+  border: 1px solid #B1B1B1 ;
+}
+.service-comment-input-box{
+  .px2rem(height,180);
+  .input-area{
+    border: none;
+    height: inherit;
+    resize: none;
+    .px2rem(line-height,30);
+    .px2rem(font-size,28);
+    .px2rem(padding-top,20);
+    .px2rem(padding-left,20);
+    .px2rem(padding-right,20);
+  }
+}
+.comment-submit-btn{
+  text-align: center;
+  .px2rem(height,100);
+  .px2rem(line-height,100);
+  .px2rem(font-size,30);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: #FF6633;
+}
+.organization-select-title{
+  color: #666666;
+  .px2rem(font-size,28);
+}
+.select-tips{
+  color: #B1B1B1;
+  .px2rem(font-size,26);
+}
+.select-organization{
+  display: none;
+  .select-right{
+    .px2rem(font-size,26);
+  }
+}

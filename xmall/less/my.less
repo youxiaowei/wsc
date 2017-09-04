@@ -1,0 +1,268 @@
+@import "common";
+.my-page-view{
+  height: 100%;
+  background-color:#fafafa;
+  padding-bottom: 1.2rem;
+  padding-top: 1.17333333rem;
+  .person-panel{
+    position:relative;
+    .px2rem(margin-bottom,32);
+    .px2rem(height,317);
+    overflow: hidden ;
+    background-image: url('../images/login/person_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .credit-href-color{
+    color: white;
+  }
+  .person-header{
+    width: 100%;
+    text-align: center;
+    .px2rem(padding-top,20);
+  }
+  .head-image{
+    .px2rem(border-radius,60);
+    border:solid 0.04rem #fff;
+    .px2rem(height,120);
+    .px2rem(width,120);
+  }
+  .person-name{
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    .px2rem(margin-top,20);
+  }
+  .person-name-l{
+    color:#fff;
+    .px2rem(font-size,30);
+  }
+  .my-collection{
+    // .px2rem(margin-top,30);
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+  }
+  .table-panel{
+    display:table;
+    width: 100%;
+    text-align: center;
+  }
+  .person-ps-right{
+    width: 50%;float: left;background-color: rgba(0, 0, 0, 0.2);
+    border-left: 2px solid #f14e21;
+  }
+  .person-ps-left{
+    width: 50%; float: left;display:table-cell;background-color: rgba(0, 0, 0, 0.2);
+  }
+  .person-p{
+    color:#fff;
+    line-height: 1;
+    .px2rem(margin-top,15);
+    .px2rem(font-size,25);
+    .px2rem(padding-bottom,10);
+  }
+  .person-number{
+    color:#fff;
+    line-height: 1;
+    .px2rem(margin-top,15);
+    .px2rem(font-size,30);
+  }
+  .my-item-cell{
+    position: relative;
+    background-color: #ffffff;
+    .px2rem(height,90);
+    clear: both;
+    .px2rem(line-height,90);
+      border-top: solid 1px #DDDDDD;
+  }
+  .item-cell-left{
+    display: inline-block;
+    .px2rem(padding-left,20);
+    .px2rem(padding-right,20);
+    .px2rem(font-size,30);
+    .cell-left-icon{
+    display: inline-block;
+    .px2rem(font-size,35);
+    vertical-align: text-bottom;
+    .px2rem(margin-right,12);
+    .newicon{
+    .px2rem(width,37);
+    	.px2rem(height,37);
+    }
+    }
+    .cell-left-name{
+      display: inline-block;
+      color: #666666;
+    }
+  }
+  .item-cell-right{
+    float: right;
+    .px2rem(line-height,90);
+    color: #b1b1b1;
+    .px2rem(padding-right,20);
+    text-align: right;
+    display: inline-block;
+    .px2rem(font-size,27);
+    .item-right-name{
+      display: inline-block;
+    }
+
+    .item-right-icon{
+      display: inline-block;
+    }
+  }
+  .sex-selector{
+      .px2rem(padding-right,0);
+    }
+  .wait-table{
+    .px2rem(height,120);
+    border-top: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DDDDDD;
+  }
+  .wait-ps{
+    position: relative;
+    .px2rem(padding-top,20);
+    .px2rem(line-height,50);
+    width: 25%;display:table-cell;background-color: #ffffff;
+  }
+  .wait-icon{
+    .px2rem(font-size,35);
+    color: #666666;
+  }
+  .wait-p{
+    .px2rem(font-size,25);
+    color: #666666;
+  }
+  .circle-count{
+    position: relative;
+    display: inline-block;
+    float: right;
+    .px2rem(top,-10);
+    .px2rem(left,-70);
+    .px2rem(width,32);
+    .px2rem(height,32);
+    background: #fff;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border: 1px solid #f55047;
+    span{
+      position: relative;
+      .px2rem(top,-10);
+      .px2rem(font-size,25);
+      color: #f55047;
+    }
+  
+  }
+  .my-border-top{
+    border-top: solid 1px #DDDDDD;
+  }
+  .my-border-bottom{
+    border-bottom: solid 1px #DDDDDD;
+  }
+  .block-margin{
+    .px2rem(margin-top,32);
+  }
+  .redcolor{
+    color: #f29c9f;
+  }
+}
+.my-page-header
+{
+  position: fixed;
+  width:100%;
+  height:1.17333333rem;
+  color:#848689;
+  .px2rem(font-size,35);
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.my-header-left,.my-header-right
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  .px2rem(font-size,45);
+  text-align: center;
+  .px2rem(width,100);
+}
+.my-balance,.my-coupon,.my-customerservice
+{
+  border-top: none !important;
+  overflow: hidden;
+}
+.my-balance::before,.my-coupon::before,.my-customerservice::before
+{
+  position: absolute;
+  content:"";
+  border-bottom: 1px solid #E5E5E5;
+  .px2rem(left,19);
+  top:0;
+  right:0;
+}
+.item-cell-value
+{
+  position: absolute;
+  color:#B1B1B1;
+  .px2rem(font-size,26);
+  .px2rem(right,52);
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#my-ydl
+{
+  display: flex;
+  .px2rem(padding-top,52);
+  flex-direction: row;
+  align-items: center;
+}
+#my-ydl img{
+  .px2rem(margin-left,31);
+}
+.ydl-show
+{
+  display: flex;
+}
+.ydl-hide{
+    display: none !important;
+}
+.my-ydl-detail
+{
+  position: relative;
+  .px2rem(padding-left,21);
+  .px2rem(font-size,34);
+  color:#fff;
+  flex:1;
+}
+.my-address-manager{
+  position: relative;
+  .px2rem(top,75);
+  .px2rem(padding,20);
+  .px2rem(padding-bottom,30);
+  color: white;
+  .px2rem(font-size,26);
+}
+.my-address-detail{
+  position: relative;
+  color: white;
+  .px2rem(top,72);
+  .px2rem(right,15);
+}
+.my-huiyuan
+{
+  .px2rem(font-size,26);
+  .px2rem(padding-top,8);
+}
+.trigger-calendar{
+  position: absolute;
+  left: -120%;
+}

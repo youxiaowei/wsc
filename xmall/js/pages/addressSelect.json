@@ -1,0 +1,11 @@
+{
+  "template": "addressSelect.html",
+  "type":"addressSelect",
+  "components" : [
+    {
+      "type": "AddressListView",
+      "id" : "AddressListView",
+      "template": "addressSelectView.html",
+      "collection": "AddressListCollection"
+    }]
+}

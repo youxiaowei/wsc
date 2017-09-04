@@ -1,0 +1,23 @@
+{
+  "type" : "shopcollector",
+  "template" : "shopcollector.html",
+  "components" : [
+    {
+      "type": "ShopCollectorView",
+      "id" : "ShopCollectorView",
+      "template": "shopcollectorlist.html",
+      "autoload":false,
+      "collection": "ShopCollector",
+      "paging":false
+    },
+    {
+      "type": "GoodsCollectorView",
+      "id" : "GoodsCollectorView",
+      "template": "goodscollectorlist.html",
+      "autoload":false,
+      "collection": "GoodsCollector",
+      "paging":false
+
+    }
+  ]
+}

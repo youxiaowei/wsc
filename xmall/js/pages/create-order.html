@@ -1,0 +1,135 @@
+<header class="headerbox">
+      <div class=" nav-left header-icon-back address-title-icon">
+          <span class="icomoon icomoon-back"></span>
+      </div>
+      <div class='mid'>
+        <span class="common-title">确认订单</span>
+      </div>
+      <div class="left-right nav-right">
+        <a class="header-icon-menu icomoon icomoon-moremore"></a>
+      </div>
+  </header>
+<div class="create-order">
+
+  <component id="AddressInOrderView" />
+  <div class="common-padding"></div>
+    <div class="confirm-order-goods">
+            <img id="packageImg" src="http://szli.yonyou.com//upload/20160602/010041K0V4AC0QL2IF8V.jpg" alt="" class="confirm-order-img">
+            
+        <div class="goods-order-title cofirm-order-top">
+                <div class="package-list-title">
+                    101020套餐商品 大米+红桃+甘露
+                </div>
+                <div class="package-list-Selling"><span id="desc">超值好礼 促销优惠</span><i>热销</i></div>
+                <div class="package-list-money">￥12202</div>
+                <div class="goods-order-number">X1</div>
+            </div>
+          <!--  <p class="confirm-order-deliver-time">预计发货时间 2016.8.6</p>  -->
+    </div>
+  <component id="CreateOrderListView"/>
+  <!-- <div class="group-cf-operation">
+    <div class="group-cf-left">份数（限购2份）</div>
+    <div class="group-cf-right">
+      <span class="icomoon icomoon-minus"></span>
+      <span class="group-cf-text">1</span>
+      <span class="icomoon icomoon-plus"></span>
+    </div> 
+  </div>-->
+<!--   <div class="cf-reward-info">
+    <div class="cf-reward-des">回报内容</div>
+    <div class="cf-reward-name-number">
+      <span class="cf-reward-name">古井贡酒特娘</span>
+      <span class="cf-reward-name">x1</span>
+    </div>
+    <div class="cf-reward-content">感谢您的支持，您将用低于商品原价的价格购买</div>
+    <div class="cf-reward-mark">项目结束两天内发货</div>
+  </div> -->
+  <div class="common-padding"></div>
+  <!-- 支付方式、配送方式-->
+  <div class="pay-send-selector">
+    <!-- <div class="send-method-order psb-selector">
+    <span class="send-method-des psb-selector-des">支付配送</span>
+    <span class="icomoon icomoon-more psb-selector-more"></span>
+    <span class="pay-method-value"></span>
+    <span class="send-method-value"></span>
+  </div> -->
+   <div class="send-method-order psb-selector">
+      <span class="pay-send-des psb-selector-des">配送方式</span>
+      <span class="icomoon icomoon-more psb-selector-more"></span>
+      <div id="point-send-value" class="send-method-value psb-selector-value"></div>
+    </div>
+    <div class="bill-order-info psb-selector">
+      <span class="bill-method-des psb-selector-des">发票信息</span>
+      <span class="icomoon icomoon-more psb-selector-more"></span>
+      <div class="bill-method-value psb-selector-value">不需要</div>
+    </div>
+  </div>
+  <div class="order-message">
+    <input type="text" placeholder="备注：您有什么要求，可以写在这里" class="message"/>
+  </div>
+  <div class="goods-total">
+    <div class="goods-total-price">
+      <span>商品金额</span>
+      <div class="total-price">
+        <span class="total-price-text">合计：</span>
+        <span class="total-price-num theme-color"></span>
+      </div>
+    </div>
+  </div>
+  <div class="goods-total">
+      <div class="goods-total-freight">
+        <span>运费</span>
+        <div class="total-freight theme-color">+ 0</div>
+      </div>
+  </div>
+  <div class="goods-total package-hidden">
+      <div class="goods-total-freight">
+        <span>活动折扣</span>
+        <div class="total-discount theme-color">- 0</div>
+      </div>
+  </div>
+  <div class="order-discount-info-view">
+    <div class="use-coupon-item">
+      <div class="use-coupon small-order-item">使用优惠券</div>
+      <component id="CouponView"/>
+    </div>
+    <!-- <div class="use-credit-card">
+      <div class="small-order-item">使用礼品卡</div>
+      <component id='CreditCardView'/>
+    </div> -->
+  </div>
+  <div class="aboutPoint">
+        <div class="usePoint" style="padding-left: 0.3rem;background: #fff;padding-top: 0.2rem;font-size: 0.34666667rem;margin-top: 0.2rem;margin-bottom: 0.2rem;">
+            <span class="usePointSpan">您有积分<a class="hasPoint currentPoint"></a></span>
+            <span class="usePointSpan">本次可用积分<a class="hasPoint usePointMoney"></a></span>
+            <span class="usePointSpan">可抵款<a class="hasPoint rdMoney"></a>元</span>
+            <div class="everyPonitReduce" style="margin-top: 0.2rem;">
+                <span style="">本次使用积分</span><input  id="thisUsePoint" class="thisUsePoint" style="width: 2rem;height:0.6rem;font-size:0.38rem"type="text" ><span style="">(每<a class="aboutPointUse">100</a>积分可以抵<a class="aboutMoneyReduce">1</a>元)</span>
+            </div>
+            <div class="useOrCancle" >
+                <button  class="usePointD" style="margin-bottom: 0.2rem;
+                font-size: 0.34666667rem;margin-left: 6rem; width: 1.6rem;border-radius: 8px;">使用</button>
+                <button  class="canclePonitD" style="margin-bottom: 0.2rem;
+                font-size: 0.34666667rem; width: 1.6rem;border-radius: 8px;">取消</button>
+            </div>
+        </div>
+		<!-- <div class="acquirePoint" style="font-size: 0.38rem;margin-left: 0.2rem;background-color: #fff">
+			 <p style="font-size: 0.38rem;">温馨提示</p>				 
+			 <span>本单获得积分:<a class="acquirePointDetail"></a></span>
+		</div> -->	
+    </div>
+</div>
+<!-- 底部bar -->
+
+ <div class="order-btm-bar">
+   <div class="order-total-fee">
+     <span class="order-total-fee-des">共计：</span>
+     <span class="fee-unit">¥</span>
+     <span class="order-total-fee-fee" id="order-total-fee-fee-sum">0</span>
+   </div><div class="order-submit theme-backgorund-color">去结算</div>
+ </div>
+ <div>
+   <component id='SearchMidPageView'/>
+   <component id="PopupMenu"/>
+ </div>
+</div>

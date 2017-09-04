@@ -1,0 +1,48 @@
+@import "common";
+.bill-lading{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.bill-ladtitle{
+    height: 1.1rem;
+    padding: 0 0.3rem;
+    line-height: 1.1rem;
+    .px2rem(font-size,28);
+    border-bottom: #cccccc solid 1px;
+}
+.bill-protuct-name{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    .px2rem(font-size,26);
+    height: 1.2rem;
+    .px2rem(line-height,46);
+}
+.bill-protuct-number{
+    .px2rem(font-size,22);
+    color: #808080;
+    margin-top: 0.2rem;
+}
+.bill-delivery-goods{
+   .px2rem(font-size,24);
+    color: #000;
+    margin-top: 0.2rem;
+}
+.quantity-delivery{
+    clear: both;
+    display: flex;
+    font-size: 0.3rem;
+    padding: 0.3rem 0;
+    line-height: 0.6rem;
+}
+.quantity-delivery input{
+    width: 60%;
+    height:0.6rem;
+    margin-left: 0.2rem;
+    border: #ccc solid 1px;
+}

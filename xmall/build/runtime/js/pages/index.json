@@ -1,0 +1,19 @@
+{
+  "header": {
+    "title": "微商城"
+  },
+  "type": "TabBarView",
+  "items": [
+    {"label": "首页", "href": "#home-navigate", "icon": "icon icomoon-home"},
+    {"label": "分类", "href": "#category-navigate", "icon": "icon icomoon-class"},
+    {"label": "购物车", "href": "#shopingcart-navigate", "icon": "icon icomoon-cart"},
+    {"label": "我的", "href": "#my-navigate", "icon": "icon icomoon-mine"}
+  ],
+  "iconsSelected":[
+    "icomoon-home_click","icomoon-class_click","icomoon-cart_click","icomoon-mine_click"
+  ],
+  "iconsDefault":[
+    "icomoon-home","icomoon-class","icomoon-cart","icomoon-mine"
+  ]
+
+}

@@ -1,0 +1,12 @@
+{
+  "type":"discountPackage",
+  "template":"discountPackage.html",
+  "components":[
+    {
+      "type":"ListView",
+      "id":"PackageListView",
+      "collection":"AjaxCollection",
+      "template":"discount-package-list-item.html"
+    }
+  ]
+}

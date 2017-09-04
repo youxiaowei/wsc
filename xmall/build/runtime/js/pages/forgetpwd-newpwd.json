@@ -1,0 +1,20 @@
+{
+  "template": "forgetpwd-newpwd.html",
+  "type":"forgetpwd-newpwd",
+  "header": {
+    "title": "请输入新密码",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components": [
+  {
+      "id": "switchView",
+      "type": "SwitchView",
+      "IsOpen":false
+    }
+  ]
+}

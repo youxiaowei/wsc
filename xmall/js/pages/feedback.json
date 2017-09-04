@@ -1,0 +1,14 @@
+{
+  "template": "feedback.html",
+  "type": "feedback",
+  "components":[
+    {
+      "id": "SearchMidPageView",
+      "type": "SearchMidPageView"
+    },
+    {
+      "id": "PopupMenu",
+      "type": "PopupMenu"
+    }
+  ]
+}

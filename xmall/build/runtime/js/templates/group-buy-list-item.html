@@ -1,0 +1,38 @@
+<div class="group-list-item">
+  <img class="product-image" src="<%=image%>" />
+  <div class="product-info">
+    <div class="name-info">
+      <%=name%>
+    </div>
+    <div class="price-percent-number">
+      <div class="price-info">
+        <span class="g-product-price theme-color">￥<%=price%></span>
+        <span class="original-price">￥<%=originalPrice%></span>
+
+      </div>
+      <div class="percent-number">
+        <span class="buy-mumber theme-color"><%=buyMember%></span>
+        <span >/</span>
+        <span class="total-number"><%=totalMember%></span>
+      </div>
+    </div>
+    <div class="progress-info">
+      <div class="progress-des">人数</div>
+      <div class="progress-bar">
+        <span class="progress-default"></span>
+        <% var progress=buyMember*100/totalMember %>
+        <span class="progress-current" style="width:<%=progress%>%;"></span>
+      </div>
+      <% progress=parseInt(progress)%>
+      <div class="progress-percent"><%=progress%>%</div>
+    </div>
+    <div class="time-btn">
+      <div class="timer">
+        <span class="icomoon icomoon-time"></span>
+        <span class="timer-des">剩余时间</span>
+        <span class="timer-value"><%=overTime%><span>
+      </div>
+      <div class="btn-operation">去参团</div>
+    </div>
+  </div>
+</div>

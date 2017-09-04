@@ -1,0 +1,37 @@
+{
+  "template": "afterPayment.html",
+  "type": "afterPayment",
+  "header": {
+    "title": "支付成功",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }, {
+      "type": "link",
+      "icon": "header-icon-menu icomoon-moremore",
+      "pull": "right",
+      "event": "menuMore"
+    }]
+  },
+  "components": [{
+    "id": "SearchMidPageView",
+    "type": "SearchMidPageView"
+  }, {
+    "id": "PopupMenu",
+    "type": "PopupMenu"
+  }, {
+    "type": "AddressInOrderView",
+    "id": "AddressInOrderView"
+  }, {
+    "type": "OrderShopListView",
+    "id": "OrderShopListView",
+    "collection": "OrderShopListCollection",
+    "template": "order-product-list-item.html"
+  },
+  {
+    "id": "ShareView",
+    "type": "ShareView"
+  }]
+}

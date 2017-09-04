@@ -1,0 +1,21 @@
+{
+  "template":"payMode.html",
+  "type": "payMode",
+  "header": {
+    "title": "支付订单",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }]
+  },
+  "components":[
+    {
+      "type": "balancePayment",
+      "id": "balancePayment",
+      "autoload": false,
+      "style":{"display":"none"}
+    }
+  ]
+}

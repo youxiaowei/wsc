@@ -1,0 +1,14 @@
+{
+  "type": "selectAddress",
+  "template":"selectAddress.html",
+  "header": {
+    "title": "选择省份",
+    "items": [{
+      "type": "link",
+      "icon": "header-icon-back icomoon-back",
+      "pull": "left",
+      "event": "back"
+    }
+    ]
+  }
+}

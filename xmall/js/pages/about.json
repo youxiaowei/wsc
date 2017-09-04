@@ -1,0 +1,23 @@
+{
+    "template": "about.html",
+    "type": "about",
+    "header": {
+        "title": "关于",
+        "items": [{
+            "type": "link",
+            "icon": "header-icon-back icomoon-back",
+            "pull": "left",
+            "event": "back"
+        }, {
+            "type": "link",
+            "icon": "header-icon-menu icomoon-moremore",
+            "pull": "right",
+            "event": "menuMore"
+        }]
+    },
+    "components": [{
+            "id": "PopupMenu",
+            "type": "PopupMenu"
+        }
+    ]
+}
